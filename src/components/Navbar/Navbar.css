@@ -20,6 +20,15 @@ a {
     font-weight: 400;
 }
 
+select {
+    border: 0;
+    color: #020202;
+    background: transparent;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 img {
     margin-right: 32px;
 }
@@ -39,5 +48,15 @@ img {
 
 .contact-us-btn {
     border-radius: 16px;
-background: #F1F1F1;
+    background: #F1F1F1;
+}
+
+input {
+    border: 0;
+    background: #F1F1F1;
+    color: #020202;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 24px;
 }

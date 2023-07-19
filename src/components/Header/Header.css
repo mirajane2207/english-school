@@ -1,0 +1,38 @@
+.header_img {
+    background: var(--strong-gradient);
+    width: 615px;
+    height: 650px;
+    position: absolute;
+    right: -40px;
+    top: -17px;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.hand_img {
+    top: 230px;
+    right: 10px;
+    position: absolute;
+}
+
+.header__title {
+    margin-bottom: 32px;
+    max-width: 830px;
+    color: #020202;
+    font-family: Oswald;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88%;
+}
+
+.header__text {
+    margin-bottom: 32px;
+    color: #696969;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
