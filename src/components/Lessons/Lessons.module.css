@@ -1,0 +1,24 @@
+.lessons___container {
+    margin-right: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+}
+
+.lessons__list_container {
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    max-width: 1000px;
+    overflow-x: scroll;
+}
+
+.lessons__list {
+    display: flex;
+    height: 160px;
+    align-items: flex-start;
+    gap: 96px;
+}

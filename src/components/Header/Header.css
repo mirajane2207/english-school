@@ -1,9 +1,13 @@
+.header__container {
+    height: 100vh;
+}
+
 .header_img {
     background: var(--strong-gradient);
     width: 615px;
     height: 650px;
     position: absolute;
-    right: -40px;
+    right: -65px;
     top: -17px;
     border-radius: 16px;
     z-index: -1;

@@ -6,7 +6,7 @@ import CustomButton from '../CustomButton/CustomButton';
 
 const Header = () => {
     return (
-        <div className='wrapper'>
+        <div className='header__container'>
             <Navbar />
             <div>
             <h1 className='header__title'>Вчити англійську з нами легко</h1>

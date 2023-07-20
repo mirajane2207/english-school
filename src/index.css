@@ -1,12 +1,15 @@
 :root {
   --white-color: #F1F1F1;
   --black-color: #020202;
+  --text-color: #696969;
   --strong-gradient: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);
   --medium-gradient: linear-gradient(135deg, rgba(222, 31, 31, 0.21) 0%, rgba(103, 31, 222, 0.21) 36.45%, rgba(0, 114, 253, 0.21) 68.25%, rgba(0, 163, 255, 0.21) 100%);
-  --light-gradient: linear-gradient(90deg, #EEDCDD 0%, #E3DCEF 33.27%, #DCDCEF 66.39%, #D9E8F2 100%); 
+  --light-gradient: linear-gradient(90deg, #EEDCDD 0%, #E3DCEF 33.27%, #DCDCEF 66.39%, #D9E8F2 100%);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -24,3 +27,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--black-color);
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.92px;
+}

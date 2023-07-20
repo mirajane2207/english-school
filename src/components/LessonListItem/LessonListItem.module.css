@@ -1,0 +1,37 @@
+.lesson__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.lesson__number {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: aliceblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.lesson__number::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('./lesson-point-img.png');
+}
+
+.lesson__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 315px;
+    gap: 24px;
+}
+
+.lesson__content h3 {
+    line-height: 100%;
+}
