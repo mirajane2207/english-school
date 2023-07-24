@@ -1,0 +1,16 @@
+.advantage__container {
+    max-width: 920px;
+    padding: 16px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantage__desc {
+    width: 655px;
+}
+
+.advantage__title {
+    min-width: 215px;
+}
