@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import About from './components/About/About'
 import Lessons from './components/Lessons/Lessons'
 import Advantages from './components/Advantages/Advantages'
+import Tariffs from './components/Tariffs/Tariffs'
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <About/>
         <Lessons/>
         <Advantages/>
+        <Tariffs/>
     </div>
   )
 }

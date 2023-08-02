@@ -1,10 +1,19 @@
 .advantage__container {
-    max-width: 920px;
     padding: 16px;
     padding-right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-image: var(--strong-gradient) 60; 
+    width: 920px;
+    border-bottom: 2px solid;
+}
+
+.advantage__container:hover{
+    max-width: 920px;
+    opacity: 0.800000011920929;
+    transition: 3s;
+    background: linear-gradient(135deg, rgba(222, 31, 31, 0.30) 0%, rgba(103, 31, 222, 0.30) 32.65%, rgba(0, 114, 253, 0.30) 64.63%, rgba(0, 163, 255, 0.30) 100%);
 }
 
 .advantage__desc {

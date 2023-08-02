@@ -1,0 +1,38 @@
+.tariff__container {
+    display: flex;
+    width: 286px;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+    background: #F1F1F1;
+    border-image: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%) 60;
+    border: 1px solid;
+    border-radius: 24px;
+}
+
+.tariff__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.tariff__details {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.tariff__desc {
+    color: #696969;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 240px;
+}

@@ -1,0 +1,13 @@
+.tariffs__container {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    background-image: url('./tariffs-rect-img.png');
+    background-position: 100% 180px;
+    background-repeat: no-repeat;
+
+}
