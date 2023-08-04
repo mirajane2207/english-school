@@ -1,7 +1,8 @@
 import React from 'react'
 import classes from './Advantages.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import AdvantagesItem from '../../AdvantagesItem/AdvantagesItem'
+import AdvantagesItem from '../AdvantagesItem/AdvantagesItem'
+
 
 const Advantages = () => {
     return (
