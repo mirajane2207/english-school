@@ -53,3 +53,9 @@ h4 {
   font-weight: 700;
   min-width: max-content;
 }
+
+h5 {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 700;
+}
