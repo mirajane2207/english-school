@@ -6,12 +6,24 @@
     overflow-x: hidden;
     align-items: flex-start;
     gap: 62px;
+    position: relative;
+
+}
+
+.tariffs__container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 180px;
+    left: 800px;
+    z-index: -1;
+    width: 698px;
+    height: 328px;
     background-image: url('./tariffs-rect-img.png');
-    background-position: 100% 180px;
-    background-repeat: no-repeat;
 }
 
 .tariffs__items_container {
+    width: 1000px;
     display: flex;
     align-items: flex-start;
     gap: 32px;

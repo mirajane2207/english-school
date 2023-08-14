@@ -15,7 +15,7 @@ const TariffItem = (props) => {
             <p className={classes.tariff__desc}>
                 {props.desc}
             </p>
-            <CustomButton>Придбати</CustomButton>
+            <CustomButton disabled >Придбати</CustomButton>
         </div>
     )
 }
