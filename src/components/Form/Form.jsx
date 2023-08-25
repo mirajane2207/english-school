@@ -17,8 +17,8 @@ const Form = () => {
                         <input type="text" placeholder='Номер телефону' />
                         <input type="text" placeholder='Email' />
                     </div>
-                    <div>
-                        <p>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
+                    <div className={classes.form__btn_container}>
+                        <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
                         <CustomButton>Відправити заявку</CustomButton>
                     </div>
                 </div>

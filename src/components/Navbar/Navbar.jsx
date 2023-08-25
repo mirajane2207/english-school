@@ -22,7 +22,7 @@ const Navbar = () => {
                             <option value="ru">Ru</option>
                         </select>
                     </li>
-                    <li><input type="button" value="Зв'язатися з нами" className='contact-us-btn'/></li>
+                    <li><button className='contact-us-btn'>Зв'язатися з нами</button></li>
                 </ul>
             </div>
         </nav>
