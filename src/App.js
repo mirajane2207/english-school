@@ -6,6 +6,7 @@ import Advantages from './components/Advantages/Advantages'
 import Tariffs from './components/Tariffs/Tariffs'
 import Reviews from './components/Reviews/Reviews'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Tariffs/>
         <Reviews/>
         <Form/>
+        <Footer/>
     </div>
   )
 }
