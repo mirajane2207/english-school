@@ -26,3 +26,14 @@ footer {
     font-size: 14px;
     font-weight: 400;
 }
+
+.footer__item_container img {
+    position: relative;
+}
+
+.footer__header {
+    padding-bottom: 16px;
+    border-image: linear-gradient(135deg, rgba(222, 31, 31, 0.30) 0%, rgba(103, 31, 222, 0.30) 32.65%, rgba(0, 114, 253, 0.30) 64.63%, rgba(0, 163, 255, 0.30) 100%) 60; 
+    width: 200px;
+    border-bottom: 2px solid;
+}
