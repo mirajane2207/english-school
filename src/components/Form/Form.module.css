@@ -51,7 +51,7 @@ input {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    border-image: var(--strong-gradient) 60;
+    border-image: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 25%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%)  1;
     border-bottom: 2px solid;
     background: transparent;
 
