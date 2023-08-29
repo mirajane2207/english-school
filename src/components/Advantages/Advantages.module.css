@@ -13,3 +13,32 @@
     align-items: flex-start;
     flex-shrink: 0;
 }
+
+.advantages__list:last-child {
+    border-bottom: 0;
+}
+
+
+.advantage__container {
+    padding: 16px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 920px;
+}
+
+.advantage__container:hover{
+    max-width: 920px;
+    opacity: 0.800000011920929;
+    transition: 3s;
+    background: linear-gradient(135deg, rgba(222, 31, 31, 0.30) 0%, rgba(103, 31, 222, 0.30) 32.65%, rgba(0, 114, 253, 0.30) 64.63%, rgba(0, 163, 255, 0.30) 100%);
+}
+
+.advantage__desc {
+    width: 655px;
+}
+
+.advantage__title {
+    min-width: 215px;
+}
