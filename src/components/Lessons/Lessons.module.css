@@ -1,5 +1,6 @@
 .lessons___container {
-    height: 90vh;
+    height: 300px;
+    margin-bottom: 180px;
     margin-right: 0;
     display: inline-flex;
     justify-content: center;

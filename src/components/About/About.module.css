@@ -1,9 +1,15 @@
 .about__container {
-    height: 100vh;
+    height: 550px;
+    margin-bottom: 190px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+}
+
+.about__text {
+    padding-top: 145px;
+    display: flex;
+    gap: 62px;
 }
 
 .about__info {
