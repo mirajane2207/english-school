@@ -18,9 +18,14 @@
     overflow-x: scroll;
 }
 
+.lessons__list_container::-webkit-scrollbar  {
+    width: 0px;
+}
+
 .lessons__list {
     display: flex;
+    width: 1600px;
     height: 160px;
-    align-items: flex-start;
-    gap: 96px;
+    gap: 70px;
+    justify-content: space-between;
 }

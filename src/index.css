@@ -17,6 +17,9 @@ body {
   background: #F1F1F1;
   margin: 0;
   font-family: "Inter", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+
 }
 
 .wrapper {

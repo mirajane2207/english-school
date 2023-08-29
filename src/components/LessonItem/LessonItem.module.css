@@ -19,8 +19,8 @@
     content: "";
     display: inline-block;
     width: 15px;
-    height: 15px;
-    background-image: url('./lesson-point-img.png');
+    height: 16px;
+    background-image: url('./lesson-point-img.svg');
 }
 
 .lesson__content {
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 315px;
+    width: 291px;
     gap: 24px;
 }
 

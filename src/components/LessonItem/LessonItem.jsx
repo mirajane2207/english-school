@@ -1,8 +1,7 @@
 import React from 'react'
-import classes from './LessonListItem.module.css'
-import point from './lesson-point-img.png'
+import classes from './LessonItem.module.css'
 
-const LessonListItem = (props) => {
+const LessonItem = (props) => {
   return (
     <div className={classes.lesson__container}>
         <div>
@@ -16,4 +15,4 @@ const LessonListItem = (props) => {
   )
 }
 
-export default LessonListItem
+export default LessonItem
