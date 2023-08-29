@@ -1,13 +1,14 @@
 import React from 'react'
 import "./Navbar.css"
 import logo from './logo.svg';
+import ua from './ua.svg';
 
 const Navbar = () => {
     return (
         <nav>
             <div className='left'>
-                <img src={logo} alt="Logo" />
-                <a href="#" className='header__mode'>Для дорослих</a>
+                <img src={logo} alt="Logo" className='logo'/>
+                <a href="#" className='header__mode_active'>Для дорослих</a>
                 <a href="#" className='header__mode'>Для дітей</a>
             </div>
             <div>
@@ -16,11 +17,12 @@ const Navbar = () => {
                     <li><a href="">Тарифи</a></li>
                     <li><a href="">Відгуки</a></li>
                     <li>
-                        <select name="lng">
+                        <img src={ua} alt="" className='uaImg'/>
+                        {/* <select name="lng">
                             <option value="ua">Ua</option>
                             <option value="en">En</option>
                             <option value="ru">Ru</option>
-                        </select>
+                        </select> */}
                     </li>
                     <li><button className='contact-us-btn'>Зв'язатися з нами</button></li>
                 </ul>
