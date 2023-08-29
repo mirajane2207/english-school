@@ -11,7 +11,7 @@ const Navbar = () => {
                 <a href="#" className='header__mode_active'>Для дорослих</a>
                 <a href="#" className='header__mode'>Для дітей</a>
             </div>
-            <div>
+            <div className='navbar'>
                 <ul>
                     <li><a href="">Про школу</a></li>
                     <li><a href="">Тарифи</a></li>
