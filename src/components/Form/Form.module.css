@@ -22,6 +22,7 @@
 }
 
 .form__container {
+    margin-bottom: 250px;
     display: flex;
     width: 1280px;
     padding: 32px;
@@ -80,8 +81,8 @@ input:focus::placeholder {
 .form__btn_container {
     display: flex;
     justify-content: space-between;
-    gap: 136px;
     align-self: stretch;
+    align-items: flex-end
 }
 
 .form__text {

@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './Form.module.css'
-import handImg from './form-img.png'
-import CustomButton from '../CustomButton/CustomButton'
+import handImg from './form-img.svg'
 
 const Form = () => {
     return (
@@ -19,7 +18,7 @@ const Form = () => {
                     </div>
                     <div className={classes.form__btn_container}>
                         <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
-                        <CustomButton>Відправити заявку</CustomButton>
+                        <button>Відправити заявку</button>
                     </div>
                 </div>
             </form>
