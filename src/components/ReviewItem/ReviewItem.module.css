@@ -30,5 +30,13 @@
 
 .review__container img {
     margin-right: 0;
+    width: 77px;
+    height: 24px;
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
