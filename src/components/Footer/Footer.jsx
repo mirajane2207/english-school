@@ -27,35 +27,15 @@ const Footer = () => {
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Стежити</h6>
-                    <ul>
-                        <li> <img src={facebook} alt="" />
-                            <a href="">Facebook</a></li>
-                        <li>
-                            <img src={instagram} alt="" />
-                            <a href="">Instagram</a>
-                        </li>
-                    </ul>
-
+                        <a href=""><img src={facebook} alt="" />Facebook</a>
+                        <a href=""><img src={instagram} alt="" />Instagram</a>
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Контакти</h6>
-                    <ul>
-                        <li> <img src={msg} alt="" />
-                            <a href="">juliabodnar7@ukr.net</a>
-                        </li>
-                        <li>
-                            <img src={phone} alt="" />
-                            <a href="">+38 097 160 14 37</a>
-                        </li>
-                        <li>
-                            <img src={telegram} alt="" />
-                            <a href="">@Juliia_bodnar</a>
-                        </li>
-                        <li>
-                            <img src={whatsup} alt="" />
-                            <a href="">+38 097 160 14 37</a>
-                        </li>
-                    </ul>
+                    <a href=""><img src={msg} alt="" />juliabodnar7@ukr.net</a>
+                    <a href=""><img src={phone} alt="" />+38 097 160 14 37</a>
+                    <a href=""><img src={telegram} alt="" />@Juliia_bodnar</a>
+                    <a href=""><img src={whatsup} alt="" />+38 097 160 14 37</a>
                 </div>
             </div>
         </footer>

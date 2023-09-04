@@ -1,5 +1,5 @@
 footer {
-    margin-top: 470px;
+    margin-top: 550px;
     border-radius: 16px 16px 0px 0px;
     background: linear-gradient(135deg, rgba(222, 31, 31, 0.21) 0%, rgba(103, 31, 222, 0.21) 36.45%, rgba(0, 114, 253, 0.21) 68.25%, rgba(0, 163, 255, 0.21) 100%);
     display: flex;
@@ -23,14 +23,17 @@ footer {
 }
 
 .footer__item_container a {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 400;
+    line-height: 100%;
 }
 
 .footer__item_container img {
     height: 20px;
     width: 20px;
-    margin: 8px;
+    margin-right: 8px;
 }
 
 .footer__header {
@@ -40,13 +43,8 @@ footer {
     border-bottom: 2px solid;
 }
 
-.footer__item_container ul {
-   padding: 0;
-   margin: 0;
-}
-
-
-.footer__item_container  ul>li {
+.footer__links {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }

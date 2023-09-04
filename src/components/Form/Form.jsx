@@ -4,7 +4,7 @@ import handImg from './form-img.svg'
 
 const Form = () => {
     return (
-        <div>
+        <div className={classes.form__wrapper}>
             <div className={classes.form__title_container}>
                 <img src={handImg} alt="" />
                 <h1 className={classes.form__title}>Втілюємо мрії багатьох</h1>
