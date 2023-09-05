@@ -1,8 +1,6 @@
-import React from 'react'
-import hand from './g8.png';
+import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import classes from "./Header.module.css"
-import CustomButton from '../CustomButton/CustomButton';
+import classes from "./Header.module.css";
 
 
 const Header = (props) => {

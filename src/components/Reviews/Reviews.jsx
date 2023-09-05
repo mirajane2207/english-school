@@ -1,9 +1,8 @@
 import React from 'react'
-import classes from './Reviews.module.css'
-import SectionTitle from '../SectionTitle/SectionTitle'
-import personImg from './reviews-person.svg'
 import ReviewItem from '../ReviewItem/ReviewItem'
-import CustomButton from '../CustomButton/CustomButton'
+import SectionTitle from '../SectionTitle/SectionTitle'
+import classes from './Reviews.module.css'
+import personImg from './reviews-person.svg'
 
 const Reviews = () => {
     return (

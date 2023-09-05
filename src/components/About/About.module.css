@@ -19,3 +19,51 @@
 .about__info h3 {
     margin-bottom: 24px;
 }
+
+.about__adult_img {
+    position: relative;
+    width: 315px;
+    height: 548px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);
+}
+
+.about__adult_img::after {
+    content: "";
+    position: absolute;
+    top: 51px;
+    left: 116px;
+    width: 615px;
+    height: 600px;
+    background-image: url('./about-adult-img.svg');
+    background-repeat: no-repeat;
+}
+
+.about__children_img {
+    position: relative;
+    width: 315px;
+    height: 548px;
+}
+
+.about__children_img::after {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: -100px;
+    width: 615px;
+    height: 600px;
+    background-image: url('./about-children-img.svg');
+    background-repeat: no-repeat;
+}
+
+.about__children_rect {
+    position: absolute;
+    top: 580px;
+    left: 710px;
+    width: 167px;
+    height: 1618px;
+    transform: rotate(-90deg);
+    border-radius: 16px;
+    z-index: -1;
+    background: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);
+}

@@ -39,8 +39,8 @@
 .header_img_children::after {
     content: "";
     position: absolute;
+    left: 58px;
     top: 195px;
-    left: 53px;
     width: 465px;
     height: 552px;
     background-image: url('./header-img-children.svg');
