@@ -12,3 +12,8 @@
         linear-gradient(#DE1F1F4D, #671FDE4D, #221FDE4D, #00A3FF4D) border-box;
     border: 1.5px solid transparent;
 }
+
+.item__container:hover {
+
+    background: var(--gradient, linear-gradient(135deg, rgba(222, 31, 31, 0.30) 0%, rgba(103, 31, 222, 0.30) 32.01%, rgba(0, 114, 253, 0.30) 61.51%, rgba(0, 163, 255, 0.30) 100%));
+}
