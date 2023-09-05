@@ -8,6 +8,7 @@ import Reviews from './components/Reviews/Reviews'
 import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import ForChildren from './components/ForChildren/ForChildren'
+import ParentsAsk from './components/ParentsAsk/ParentsAsk'
 
 
 
@@ -33,7 +34,7 @@ const App = () => {
             <About mode={mode} title='Чим цікава та унікальна школа англійської для дітей Pengli?' text='В онлайн-школі Pengli Ваша дитина зможе не тільки покращити рівень англійської та здобути необхідні навички для успішного навчання у школі, але й по-справжньому полюбити вивчення іноземної мови та з нетерпінням чекати на кожне заняття. Інтерактивні завдання, вікторини, ігри, перегляд та обговорення улюблених мультиків - все це перетворить навчання в цікавий та захопливий процес, а наші досвідчені викладачі максимально наповнять кожне заняття важливим та корисним матеріалом.'/>
             <ForChildren />
             <Tariffs />
-            <Reviews />
+            <ParentsAsk />
             <Form />
             <Footer />
           </div>
