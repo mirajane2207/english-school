@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Контакти</h6>
-                    <a href=""><img src={msg} alt="" />juliabodnar7@ukr.net</a>
-                    <a href=""><img src={phone} alt="" />+38 097 160 14 37</a>
-                    <a href=""><img src={telegram} alt="" />@Juliia_bodnar</a>
+                    <a href="mailto:juliabodnar7@ukr.net"><img src={msg} alt="" />juliabodnar7@ukr.net</a>
+                    <a href="tel:+380971601437"><img src={phone} alt="" />+38 097 160 14 37</a>
+                    <a href="https://t.me/OksanaChernenko2207"><img src={telegram} alt="" />@Juliia_bodnar</a>
                     <a href=""><img src={whatsup} alt="" />+38 097 160 14 37</a>
                 </div>
             </div>

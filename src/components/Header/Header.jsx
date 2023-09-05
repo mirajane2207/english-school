@@ -5,19 +5,16 @@ import classes from "./Header.module.css"
 import CustomButton from '../CustomButton/CustomButton';
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className={classes.header__container}>
-            <Navbar />
+            <Navbar mode={props.mode} />
             <div>
-            <h1 className={classes.header__title}>Вчити англійську з нами легко</h1>
-            <p className={classes.header__text}>Школа англійської, з якою ти точно заговориш як Native Speaker</p>
-            <button>Зв'язатися з нами</button>
+                <h1 className={classes.header__title}>{props.title}</h1>
+                <p className={classes.header__text}>{props.text}</p>
+                <button>Зв'язатися з нами</button>
             </div>
-            <div className={classes.header_img}>
-                {/* <img src={hand} alt="" className={classes.hand_img} /> */}
-            </div>
-            
+            <div className={props.mode === 'adult' ? classes.header_img_adult : classes.header_img_children}></div>
         </div>
     )
 }
