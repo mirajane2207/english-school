@@ -7,11 +7,12 @@ import Tariffs from './components/Tariffs/Tariffs'
 import Reviews from './components/Reviews/Reviews'
 import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
+import ForChildren from './components/ForChildren/ForChildren'
 
 
 
 const App = () => {
-  const [mode, setMode] = useState('adult');
+  const [mode, setMode] = useState('children');
 
   return (
     <div className='wrapper'>
@@ -30,7 +31,7 @@ const App = () => {
           : <div>
             <Header mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.'/>
             <About mode={mode} title='Чим цікава та унікальна школа англійської для дітей Pengli?' text='В онлайн-школі Pengli Ваша дитина зможе не тільки покращити рівень англійської та здобути необхідні навички для успішного навчання у школі, але й по-справжньому полюбити вивчення іноземної мови та з нетерпінням чекати на кожне заняття. Інтерактивні завдання, вікторини, ігри, перегляд та обговорення улюблених мультиків - все це перетворить навчання в цікавий та захопливий процес, а наші досвідчені викладачі максимально наповнять кожне заняття важливим та корисним матеріалом.'/>
-            <Lessons />
+            <ForChildren />
             <Advantages />
             <Tariffs />
             <Reviews />

@@ -1,0 +1,14 @@
+.for_children__container {
+    height: 415px;
+    margin-bottom: 180px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 62px;
+}
+
+.for_children__content_container {
+    height: 415px;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 32px;
+}
