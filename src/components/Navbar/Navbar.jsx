@@ -5,7 +5,7 @@ import ua from './ua.svg';
 
 const Navbar = (props) => {
 
-    const [mode, setMode] = useState('adult')
+    const [mode, setMode] = useState('children')
     function setAdult() {
         setMode('adult')
     }
@@ -25,7 +25,11 @@ const Navbar = (props) => {
                 <ul>
                     <li><a href="">Про школу</a></li>
                     <li><a href="">Тарифи</a></li>
-                    <li><a href="">Відгуки</a></li>
+                    {
+                        mode === 'adult'
+                        ?      <li><a href="">Відгуки</a></li>
+                        :    <li><a href="">Батьки питають</a></li>
+                    }
                     <li>
                         <img src={ua} alt="" className='uaImg'/>
                         {/* <select name="lng">

@@ -28,3 +28,40 @@
     align-items: flex-start;
     gap: 32px;
 }
+
+.tariffs__btns {
+    display: flex;
+}
+
+.tariffs__btns p {
+    color: #020202;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tariffs__btn_left {
+    background: url('tariffs-left-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__btn_left:disabled {
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__btn_left:hover {
+    box-shadow: none;
+}
+
+.tariffs__btn_right {
+    background: url('tariffs-right-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__btn_right:hover {
+    box-shadow: none;
+}

@@ -1,13 +1,22 @@
-import React from 'react'
+import {React, useState, useRef} from 'react'
 import classes from './Tariffs.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import TariffItem from '../TariffItem/TariffItem'
 
 const Tariffs = () => {
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(false);
+
+    const listRef = useRef(null);
+
     return (
         <div className={classes.tariffs__container}>
             <SectionTitle>Наші тарифи
-                <p>/\1...4/\</p>
+                <div  className={classes.tariffs__btns} >
+                    <button  className={classes.tariffs__btn_left}></button>
+                    <p>1...4</p>
+                    <button className={classes.tariffs__btn_right}></button>
+                </div>
             </SectionTitle>
             <div className={classes.tariffs__items_container}>
                 <TariffItem title='Індивідуальний' qty='8 занять' price='2000 грн' desc='Заняття 2 рази на тиждень індивідуально з викладачем за авторською програмою' />
