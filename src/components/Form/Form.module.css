@@ -1,9 +1,10 @@
 .form__wrapper {
     margin-bottom: 250px;
+    height: 580px;
 }
 
 .form__title {
-    max-width: 840px;
+    max-width: 920px;
     color: #DCDCEF;
     text-align: center;
     font-family: Oswald;
@@ -14,15 +15,27 @@
     /* 120px */
 }
 
-.form__title_container {
+.form__adult_title {
     display: flex;
     position: absolute;
     z-index: -1;
 }
 
-.form__title_container img{
+.form__children_title {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+.form__adult_title img{
     position: relative;
     top: -110px;
+}
+
+.form__children_title img{
+    position: relative;
+    top: -35px;
+    left: 70px;
 }
 
 .form__container {

@@ -1,5 +1,4 @@
 footer {
-    margin-top: 550px;
     border-radius: 16px 16px 0px 0px;
     background: linear-gradient(135deg, rgba(222, 31, 31, 0.21) 0%, rgba(103, 31, 222, 0.21) 36.45%, rgba(0, 114, 253, 0.21) 68.25%, rgba(0, 163, 255, 0.21) 100%);
     display: flex;
@@ -38,7 +37,7 @@ footer {
 
 .footer__header {
     padding-bottom: 16px;
-    border-image: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 25%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%)  1; 
+    border-image: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 25%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%) 1;
     width: 200px;
     border-bottom: 2px solid;
 }

@@ -26,7 +26,7 @@ const App = () => {
             <Advantages />
             <Tariffs />
             <Reviews />
-            <Form />
+            <Form mode={mode}/>
             <Footer />
           </div>
           : <div>
@@ -35,7 +35,7 @@ const App = () => {
             <ForChildren />
             <Tariffs />
             <ParentsAsk />
-            <Form />
+            <Form mode={mode}/>
             <Footer />
           </div>
       }

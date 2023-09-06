@@ -1,14 +1,22 @@
 import React from 'react'
 import classes from './Form.module.css'
-import handImg from './form-img.svg'
+import adultImg from './form-adult-img.svg'
+import cildrenImg from './form-children-img.svg'
 
-const Form = () => {
+const Form = (props) => {
     return (
         <div className={classes.form__wrapper}>
-            <div className={classes.form__title_container}>
-                <img src={handImg} alt="" />
-                <h1 className={classes.form__title}>Втілюємо мрії багатьох</h1>
-            </div>
+            {
+                props.mode === 'adult'
+                    ? <div className={classes.form__adult_title}>
+                        <img src={adultImg} alt="" />
+                        <h1 className={classes.form__title}>Втілюємо мрії багатьох</h1>
+                    </div>
+                    : <div className={classes.form__children_title}>
+                        <img src={cildrenImg} alt="" />
+                        <h1 className={classes.form__title}>Keep calm and learn English</h1>
+                    </div>
+            }
             <form action="">
                 <div className={classes.form__container}>
                     <div className={classes.form__input_container}>
