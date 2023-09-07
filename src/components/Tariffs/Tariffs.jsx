@@ -4,11 +4,6 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 import TariffItem from '../TariffItem/TariffItem'
 
 const Tariffs = () => {
-    const [canScrollLeft, setCanScrollLeft] = useState(false);
-    const [canScrollRight, setCanScrollRight] = useState(false);
-
-    const listRef = useRef(null);
-
     return (
         <div className={classes.tariffs__container}>
             <SectionTitle>Наші тарифи

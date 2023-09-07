@@ -7,26 +7,26 @@ const Navbar = (props) => {
 
     const [mode, setMode] = useState('children')
     function setAdult() {
-        setMode('adult')
+        props.changeMode('adult')
     }
 
     function setChildren() {
-        setMode('children')
+        props.changeMode('children')
     }
 
     return (
         <nav>
             <div className='left'>
                 <img src={logo} alt="Logo" className='logo'/>
-                <a href="#" className={mode === 'adult' ? 'header__mode_active' : 'header__mode'} onClick={setAdult}>Для дорослих</a>
-                <a href="#" className={mode === 'children' ? 'header__mode_active' : 'header__mode'}  onClick={setChildren}>Для дітей</a>
+                <a href="#" className={props.mode === 'adult' ? 'header__mode_active' : 'header__mode'} onClick={setAdult}>Для дорослих</a>
+                <a href="#" className={props.mode === 'children' ? 'header__mode_active' : 'header__mode'}  onClick={setChildren}>Для дітей</a>
             </div>
             <div className='navbar'>
                 <ul>
                     <li><a href="">Про школу</a></li>
                     <li><a href="">Тарифи</a></li>
                     {
-                        mode === 'adult'
+                        props.mode === 'adult'
                         ?      <li><a href="">Відгуки</a></li>
                         :    <li><a href="">Батьки питають</a></li>
                     }

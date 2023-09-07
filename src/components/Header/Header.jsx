@@ -6,7 +6,7 @@ import classes from "./Header.module.css";
 const Header = (props) => {
     return (
         <div className={classes.header__container}>
-            <Navbar mode={props.mode} />
+            <Navbar mode={props.mode} changeMode={props.changeMode}/>
             <div>
                 <h1 className={classes.header__title}>{props.title}</h1>
                 <p className={classes.header__text}>{props.text}</p>
