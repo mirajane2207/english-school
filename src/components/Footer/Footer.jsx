@@ -8,7 +8,16 @@ import phone from './phone-ico.svg'
 import msg from './msg-ico.svg'
 import whatsup from './whatsup-ico.svg'
 
-const Footer = () => {
+const Footer = ({mode, changeMode}) => {
+    function setAdult() {
+        changeMode('adult')
+        console.log('switched')
+    }
+
+    function setChildren() {
+        changeMode('children')
+    }
+
     return (
         <footer>
             <div className={classes.footer__content_container}>
@@ -18,12 +27,17 @@ const Footer = () => {
                     <a href="">Головна</a>
                     <a href="">Про школу</a>
                     <a href="">Тарифи</a>
-                    <a href="">Відгуки</a>
+                    {
+                        mode === 'adult'
+                        ?  <a href="">Відгуки</a>
+                        :  <a href="">Батьки питають</a>
+                    }
+                   
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Навігація</h6>
-                    <a href="">Для дорослих</a>
-                    <a href="">Для дітей</a>
+                    <a href="#" onClick={setAdult}>Для дорослих</a>
+                    <a href="#" onClick={setChildren}>Для дітей</a>
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Стежити</h6>

@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import "./Navbar.css"
+import React from 'react';
+import "./Navbar.css";
 import logo from './logo.svg';
 import ua from './ua.svg';
 
 const Navbar = (props) => {
 
-    const [mode, setMode] = useState('children')
     function setAdult() {
         props.changeMode('adult')
     }
