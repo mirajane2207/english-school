@@ -9,11 +9,12 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import ForChildren from './components/ForChildren/ForChildren'
 import ParentsAsk from './components/ParentsAsk/ParentsAsk'
+import ContactUsModal from './components/ContactUsModal/ContactUsModal'
 
 
 
 const App = () => {
-  const [mode, setMode] = useState('children');
+  const [mode, setMode] = useState('adult');
 
   function changeMode(mode) {
       setMode(mode)
@@ -32,6 +33,7 @@ const App = () => {
             <Reviews />
             <Form mode={mode}/>
             <Footer  mode={mode} changeMode={changeMode}/>
+            <ContactUsModal/>
           </div>
           : <div>
             <Header changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.'/>
@@ -41,6 +43,7 @@ const App = () => {
             <ParentsAsk />
             <Form mode={mode}/>
             <Footer mode={mode} changeMode={changeMode}/>
+            <ContactUsModal/>
           </div>
       }
 
