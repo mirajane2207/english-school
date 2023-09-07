@@ -37,7 +37,7 @@ const Navbar = (props) => {
                             <option value="ru">Ru</option>
                         </select> */}
                     </li>
-                    <li><button className='contact-us-btn'>Зв'язатися з нами</button></li>
+                    <li><button className='contact-us-btn' onClick={props.contactUs}>Зв'язатися з нами</button></li>
                 </ul>
             </div>
         </nav>

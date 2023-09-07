@@ -55,6 +55,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 435px;
+    height: 80px;
     gap: 5px;
 
     border-radius: 8px;

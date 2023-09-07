@@ -6,13 +6,22 @@ import fb from './../Footer/facebook-ico.svg'
 import tg from './../Footer/telegram-ico.svg'
 
 
-const ContactUsModal = () => {
+const ContactUsModal = ({visible, setVisible}) => {
+    const rootClasses = [classes.modal__container]
+    if(visible) {
+        rootClasses.push(classes.active)
+    }
+
+    function hideModal() {
+        setVisible(false)
+    }
+
     return (
-        <div className={[classes.modal__container, classes.active].join(' ')}>
-            <div className={classes.modal__content}>
+        <div className={rootClasses.join(' ')} onClick={hideModal}>
+            <div className={classes.modal__content} onClick={(e) => e.stopPropagation()}>
                 <div className={classes.modal__title} >
                     <h3>Контакти</h3>
-                    <button></button>
+                    <button onClick={hideModal}></button>
                 </div>
                 <div className={classes.modal__info}>
                     <p>+38 097 160 14 37</p>
