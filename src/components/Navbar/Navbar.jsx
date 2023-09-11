@@ -22,12 +22,12 @@ const Navbar = (props) => {
             </div>
             <div className='navbar'>
                 <ul>
-                    <li><a href="">Про школу</a></li>
-                    <li><a href="">Тарифи</a></li>
+                    <li><a onClick={() => props.scrollTo("#about")}>Про школу</a></li>
+                    <li><a onClick={() => props.scrollTo('#tariffs')}>Тарифи</a></li>
                     {
                         props.mode === 'adult'
-                        ?      <li><a href="">Відгуки</a></li>
-                        :    <li><a href="">Батьки питають</a></li>
+                        ?      <li><a onClick={() => props.scrollTo('#reviews')}>Відгуки</a></li>
+                        :    <li><a onClick={() => props.scrollTo('#parentsAsk')}>Батьки питають</a></li>
                     }
                     <li>
                         <img src={ua} alt="" className='uaImg'/>

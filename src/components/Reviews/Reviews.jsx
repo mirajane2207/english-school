@@ -22,7 +22,7 @@ const Reviews = () => {
 
     return (
         <div>
-            <div className={classes.reviews__container}>
+            <div className={classes.reviews__container} id='reviews'>
                 <div>
                     <SectionTitle>Відгуки про нас</SectionTitle>
                     <img src={personImg} alt="" className={classes.reviews__img} />

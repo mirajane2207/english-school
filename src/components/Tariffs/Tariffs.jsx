@@ -5,7 +5,7 @@ import TariffItem from '../TariffItem/TariffItem'
 
 const Tariffs = () => {
     return (
-        <div className={classes.tariffs__container}>
+        <div className={classes.tariffs__container} id='tariffs'>
             <SectionTitle>Наші тарифи
                 <div  className={classes.tariffs__btns} >
                     <button  className={classes.tariffs__btn_left}></button>

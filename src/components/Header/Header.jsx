@@ -11,8 +11,8 @@ const Header = (props) => {
     }
 
     return (
-        <div className={classes.header__container}>
-            <Navbar mode={props.mode} changeMode={props.changeMode} contactUs={showModal}/>
+        <div className={classes.header__container} id='header'> 
+            <Navbar scrollTo={props.scrollTo} mode={props.mode} changeMode={props.changeMode} contactUs={showModal}/>
             <div>
                 <h1 className={classes.header__title}>{props.title}</h1>
                 <p className={classes.header__text}>{props.text}</p>

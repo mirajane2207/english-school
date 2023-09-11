@@ -5,7 +5,7 @@ import ParentsAskItem from '../ParentsAskItem/ParentsAskItem'
 
 const ParentsAsk = () => {
     return (
-        <div className={classes.parents_ask__container}>
+        <div className={classes.parents_ask__container} id='parentsAsk'>
             <SectionTitle>Батьки питають</SectionTitle>
             <div className={classes.parents_ask__content_container}>
                 <hr />

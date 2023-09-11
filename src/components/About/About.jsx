@@ -4,7 +4,7 @@ import classes from './About.module.css'
 
 const About = (props) => {
     return (
-        <div className={classes.about__container}>
+        <div className={classes.about__container} id='about'>
             <div className={classes.about__text}>
                 <SectionTitle>Про школу</SectionTitle>
                 <div className={classes.about__info}>

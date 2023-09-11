@@ -1,7 +1,8 @@
 .tariffs__container {
     margin-bottom: 160px;
+    scroll-margin-top: 200px;
     height: 520px;
-    width: 100vw;
+    width: 1370px;
     display: flex;
     overflow-x: hidden;
     align-items: flex-start;

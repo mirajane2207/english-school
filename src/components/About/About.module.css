@@ -1,4 +1,5 @@
 .about__container {
+    scroll-margin-top: 100px;
     height: 550px;
     margin-bottom: 190px;
     display: flex;

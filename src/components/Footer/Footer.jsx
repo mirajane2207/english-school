@@ -8,10 +8,9 @@ import phone from './phone-ico.svg'
 import msg from './msg-ico.svg'
 import whatsup from './whatsup-ico.svg'
 
-const Footer = ({mode, changeMode}) => {
+const Footer = ({mode, changeMode, scrollTo}) => {
     function setAdult() {
         changeMode('adult')
-        console.log('switched')
     }
 
     function setChildren() {
@@ -24,13 +23,13 @@ const Footer = ({mode, changeMode}) => {
                 <img src={logo} alt="" />
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Меню</h6>
-                    <a href="">Головна</a>
-                    <a href="">Про школу</a>
-                    <a href="">Тарифи</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#header')}>Головна</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#about')}>Про школу</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#tariffs')}>Тарифи</a>
                     {
                         mode === 'adult'
-                        ?  <a href="">Відгуки</a>
-                        :  <a href="">Батьки питають</a>
+                        ?  <a className={classes.footer__nav} onClick={() => scrollTo('#reviews')}>Відгуки</a>
+                        :  <a className={classes.footer__nav} onClick={() => scrollTo('#parentsAsk')}>Батьки питають</a>
                     }
                    
                 </div>
@@ -41,8 +40,8 @@ const Footer = ({mode, changeMode}) => {
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Стежити</h6>
-                        <a href=""><img src={facebook} alt="" />Facebook</a>
-                        <a href=""><img src={instagram} alt="" />Instagram</a>
+                        <a href="#"><img src={facebook} alt="" />Facebook</a>
+                        <a href="#"><img src={instagram} alt="" />Instagram</a>
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Контакти</h6>

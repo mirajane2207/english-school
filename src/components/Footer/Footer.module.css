@@ -41,3 +41,7 @@ footer {
     width: 200px;
     border-bottom: 2px solid;
 }
+
+.footer__nav {
+    cursor: pointer;
+}

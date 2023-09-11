@@ -1,4 +1,5 @@
 .parents_ask__container {
+    scroll-margin-top: 200px;
     display: inline-flex;
     align-items: flex-start;
     gap: 62px;
