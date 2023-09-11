@@ -21,6 +21,8 @@ const Navbar = (props) => {
                 <a href="#" className={props.mode === 'children' ? 'header__mode_active' : 'header__mode'}  onClick={setChildren}>Для дітей</a>
             </div>
             <div className='navbar'>
+            <img src={ua} alt="" className='uaImg'/>
+
                 <ul>
                     <li><a onClick={() => props.scrollTo("#about")}>Про школу</a></li>
                     <li><a onClick={() => props.scrollTo('#tariffs')}>Тарифи</a></li>
