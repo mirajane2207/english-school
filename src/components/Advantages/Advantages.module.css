@@ -58,3 +58,25 @@
 .advantage__title {
     min-width: 215px;
 }
+
+@media(max-width: 520px) {
+
+    .advantages__container {
+        margin-bottom: 96px;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .advantage__container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0;
+        gap: 16px;
+        max-width: 320px;
+    }
+
+    .advantage__container p {
+        max-width: 320px;
+    }
+
+}

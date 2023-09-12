@@ -8,7 +8,7 @@ const About = (props) => {
             <div className={classes.about__text}>
                 <SectionTitle>Про школу</SectionTitle>
                 <div className={classes.about__info}>
-                    <h3>{props.title}</h3>
+                    <h3 className={props.mode === 'adult' ? classes.about__h3_adult : classes.about__h3_children}>{props.title}</h3>
                     <p className={props.mode === 'adult' ? classes.about__p_adult : classes.about__p_children}>{props.text}</p>
                 </div>
             </div>

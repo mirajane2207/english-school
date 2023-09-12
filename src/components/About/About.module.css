@@ -71,7 +71,7 @@
 @media(max-width: 520px) {
     .about__container {
         flex-direction: column;
-        margin-bottom: 96px;
+        margin-bottom: -100px;
     }
 
     .about__text {
@@ -81,7 +81,7 @@
     }
 
     .about__adult_img {
-        top: -200px;
+        top: -210px;
         left: 225px;
         width: 102px;
         height: 183px;
@@ -102,7 +102,13 @@
         max-width: 300px;
     }
 
-    .about__info h3 {
+    .about__h3_adult {
+        font-size: 20px;
+        line-height: 112.5%;
+        letter-spacing: -1.2px;
+    }
+
+    .about__h3_children {
         max-width: 189px;
         font-size: 20px;
         line-height: 112.5%;

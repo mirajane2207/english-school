@@ -6,7 +6,7 @@
     justify-content: space-between;
     transition-property: background-color, color;
     transition-duration: 1s;
-    border-image: var(--strong-gradient) 60;
+    border-image: var(--strong-gradient) 1;
     width: 920px;
     border-bottom: 2px solid;
     position: relative;
@@ -37,4 +37,18 @@
 
 .advantage__title {
     min-width: 215px;
+}
+
+@media(max-width: 520px) {
+    .advantage__container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0;
+        gap: 16px;
+        max-width: 320px;
+    }
+
+    .advantage__container p {
+        max-width: 320px;
+    }
 }

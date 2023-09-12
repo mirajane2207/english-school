@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Lessons.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import lessonsImg from './lessons-img.svg'
+import lessonsMobileImg from './lessons-img-mobile.svg'
 import LessonItem from '../LessonItem/LessonItem'
 
 const Lessons = () => {
@@ -9,7 +10,11 @@ const Lessons = () => {
     <div className={classes.lessons___container}>
         <SectionTitle>Уроки для всіх</SectionTitle>
         <div className={classes.lessons__list_container}>
-            <img src={lessonsImg} alt="" />
+          {
+            window.screen.availWidth > 520
+            ? <img src={lessonsImg} alt="" />
+            : <img src={lessonsMobileImg} alt="" />
+          }
             <div className={classes.lessons__list}>
                 <LessonItem number='01' title='Новачкам' desc='За максимально короткий час наші викладачі дадуть вам всю необхідну базу'/>
                 <LessonItem number='02' title='Бізнес англійська' desc='Розберемо аспекти роботи з іноземними колегами, навчимося вести переговори, писати листи та інше'/>

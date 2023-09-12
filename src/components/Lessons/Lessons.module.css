@@ -2,7 +2,7 @@
     height: 300px;
     margin-bottom: 180px;
     margin-right: 0;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 62px;
@@ -18,7 +18,7 @@
     overflow-x: scroll;
 }
 
-.lessons__list_container::-webkit-scrollbar  {
+.lessons__list_container::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -28,4 +28,24 @@
     height: 160px;
     gap: 70px;
     justify-content: space-between;
+}
+
+@media(max-width: 520px) {
+    .lessons___container {
+        max-width: 320px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        margin-bottom: 100px;
+        gap: 16px;
+    }
+
+    .lessons__list {
+        gap: 52px;
+    }
+
+    .lessons__list_container {
+        max-width: 320px;
+    }
 }
