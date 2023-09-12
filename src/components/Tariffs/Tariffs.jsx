@@ -1,4 +1,4 @@
-import {React, useState, useRef} from 'react'
+import { React, useState, useRef } from 'react'
 import classes from './Tariffs.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import TariffItem from '../TariffItem/TariffItem'
@@ -6,13 +6,15 @@ import TariffItem from '../TariffItem/TariffItem'
 const Tariffs = () => {
     return (
         <div className={classes.tariffs__container} id='tariffs'>
-            <SectionTitle>Наші тарифи
-                <div  className={classes.tariffs__btns} >
-                    <button  className={classes.tariffs__btn_left}></button>
+            <div className={classes.tariffs__title_container}>
+                <SectionTitle>Наші тарифи</SectionTitle>
+                <div className={classes.tariffs__btns} >
+                    <button className={classes.tariffs__btn_left}></button>
                     <p>1...4</p>
                     <button className={classes.tariffs__btn_right}></button>
                 </div>
-            </SectionTitle>
+            </div>
+
             <div className={classes.tariffs__items_container}>
                 <TariffItem title='Індивідуальний' qty='8 занять' price='2000 грн' desc='Заняття 2 рази на тиждень індивідуально з викладачем за авторською програмою' />
                 <TariffItem title='Груповий' qty='8 занять' price='1500 грн' desc='Заняття в групах до 5 людей, 2 рази на тиждень за авторською програмою' />

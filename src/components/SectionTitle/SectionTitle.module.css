@@ -13,6 +13,8 @@
 
     .section__title {
         font-size: 26px;
+        max-width: max-content;
+        min-width: max-content;
     }
 
 }
