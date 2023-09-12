@@ -101,5 +101,11 @@ select {
     .navbar ul {
         display: none;
     }
+
+    .logo {
+        height: 35px;
+        width: 63px;
+        margin-right: 12px;
+    } 
 }
 

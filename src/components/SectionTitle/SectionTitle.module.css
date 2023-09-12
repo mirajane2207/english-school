@@ -3,10 +3,16 @@
     min-width: 300px;
     max-width: 300px;
     display: block;
-    color: #020202;
     font-family: Oswald;
     font-size: 78px;
-    font-style: normal;
     font-weight: 700;
     line-height: 100%;
+}
+
+@media(max-width: 520px) {
+
+    .section__title {
+        font-size: 26px;
+    }
+
 }
