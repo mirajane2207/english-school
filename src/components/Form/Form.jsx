@@ -21,7 +21,7 @@ const Form = (props) => {
                 <div className={classes.form__container}>
                     <div className={classes.form__input_container}>
                         <input type="text" placeholder='Ваше ім’я' />
-                        <input type="text" placeholder='Номер телефону' />
+                        <input type="tel" placeholder='Номер телефону' />
                         <input type="text" placeholder='Email' />
                     </div>
                     <div className={classes.form__btn_container}>

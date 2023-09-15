@@ -47,3 +47,34 @@
     gap: 40px;
 }
 
+
+
+@media(max-width: 520px) {
+
+    .reviews__container {
+        scroll-margin-top: 80px;
+        margin-bottom: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .reviews__items_container {
+    height: 600px;
+    overflow-y: clip;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.reviews__img {
+    display: none;
+}
+
+.reviews__content_container button {
+    padding: 12px 60px;
+    font-size: 16px;
+}
+
+}
