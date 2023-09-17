@@ -18,17 +18,32 @@ const Form = (props) => {
                     </div>
             }
             <form action="">
-                <div className={classes.form__container}>
-                    <div className={classes.form__input_container}>
-                        <input type="text" placeholder='Ваше ім’я' />
-                        <input type="tel" placeholder='Номер телефону' />
-                        <input type="text" placeholder='Email' />
-                    </div>
-                    <div className={classes.form__btn_container}>
-                        <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
-                        <button>Відправити заявку</button>
-                    </div>
-                </div>
+                {
+                    window.screen.availWidth > 520
+                        ? <div className={classes.form__container}>
+                            <div className={classes.form__input_container}>
+                                <input type="text" placeholder='Ваше ім’я' />
+                                <input type="tel" placeholder='Номер телефону' />
+                                <input type="text" placeholder='Email' />
+                            </div>
+                            <div className={classes.form__btn_container}>
+                                <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
+                                <button>Відправити заявку</button>
+                            </div>
+                        </div>
+                        : <div className={classes.form__container}>
+                            <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
+                            <div className={classes.form__input_container}>
+                                <input type="text" placeholder='Ваше ім’я' />
+                                <input type="number" placeholder='Номер телефону' />
+                                <input type="text" placeholder='Email' />
+                            </div>
+                            <div className={classes.form__btn_container}>
+                                <button>Відправити заявку</button>
+                            </div>
+                        </div>
+                }
+
             </form>
         </div>
     )
