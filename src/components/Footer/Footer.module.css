@@ -45,3 +45,26 @@ footer {
 .footer__nav {
     cursor: pointer;
 }
+
+@media(max-width: 520px) {
+    footer {
+        width: 320px;
+        margin-left: -10px;
+        padding: 24px 10px;
+    }
+
+    .footer__content_container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer__header {
+        width: 300px;
+        margin-bottom: 6px;
+    }
+
+    .footer__logo {
+        width: 63px;
+        height: 35px;
+    }
+}

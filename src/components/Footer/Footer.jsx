@@ -20,7 +20,7 @@ const Footer = ({mode, changeMode, scrollTo}) => {
     return (
         <footer>
             <div className={classes.footer__content_container}>
-                <img src={logo} alt="" />
+                <img src={logo} alt="" className={classes.footer__logo}/>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Меню</h6>
                     <a className={classes.footer__nav} onClick={() => scrollTo('#header')}>Головна</a>
