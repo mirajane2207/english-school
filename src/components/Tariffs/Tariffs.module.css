@@ -77,8 +77,11 @@
 
     .tariffs__container {
         margin-bottom: 96px;
+        height: auto;
+        overflow-y: hidden;
         flex-direction: column;
         max-width: 300px;
+        gap: 24px;
     }
 
     .tariffs__title_container {

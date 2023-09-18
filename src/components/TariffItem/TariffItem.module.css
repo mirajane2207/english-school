@@ -59,6 +59,7 @@
 @media(max-width: 520px) {
     .tariff__container {
         width: 220px;
+        gap: 24px;
     }
 
     .tariff__title h3 {

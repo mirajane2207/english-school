@@ -1,6 +1,6 @@
 .parents_ask__container {
     scroll-margin-top: 200px;
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 62px;
     margin-bottom: 180px;
@@ -19,4 +19,13 @@
     height: 2px;
     border: 0;
     margin: 0;
+}
+
+@media(max-width: 520px) {
+    .parents_ask__container {
+        flex-direction: column;
+        max-width: 300px;
+        gap: 24px;
+        margin-bottom: 96px;
+    }
 }

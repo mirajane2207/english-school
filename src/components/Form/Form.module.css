@@ -174,4 +174,16 @@ input:focus::placeholder {
     .form__adult_title {
         padding-left: 74px;
     }
+
+    .form__children_title img {
+        width: 76px;
+        height: 97px;
+        top: -20px;
+        left: 60px;
+    }
+
+    .form__children_title h1 {
+        margin-left: 67px;
+    }
+
 }
