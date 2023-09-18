@@ -12,3 +12,20 @@
     display: grid;
     gap: 32px;
 }
+
+@media(max-width: 520px) {
+    .for_children__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: auto;
+        margin-bottom: 96px;
+    }
+
+    .for_children__content_container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: auto;
+    }
+}
