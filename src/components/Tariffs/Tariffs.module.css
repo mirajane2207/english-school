@@ -8,7 +8,6 @@
     align-items: flex-start;
     gap: 62px;
     position: relative;
-
 }
 
 .tariffs__container::before {
@@ -27,7 +26,8 @@
     width: 1000px;
     display: flex;
     align-items: flex-start;
-    gap: 32px;
+    overflow-x: hidden;
+
 }
 
 .tariffs__btns {
@@ -47,8 +47,8 @@
     background-position: center;
 }
 
-.tariffs__btn_left:disabled {
-    background: black;
+.tariffs__btn_left_active {
+    background: url('tariffs-left-icon-active.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -57,6 +57,10 @@
     box-shadow: none;
 }
 
+.tariffs__btn_left_active:hover {
+    box-shadow: none;
+} 
+
 .tariffs__btn_right {
     background: url('tariffs-right-icon.svg');
     background-repeat: no-repeat;
@@ -64,6 +68,16 @@
 }
 
 .tariffs__btn_right:hover {
+    box-shadow: none;
+}
+
+.tariffs__btn_right_active {
+    background: url('tariffs-right-icon-active.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__btn_right_active:hover {
     box-shadow: none;
 }
 
@@ -98,32 +112,6 @@
         font-weight: 400;
     }
 
-    .tariffs__btn_left {
-        background: url('tariffs-left-icon.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .tariffs__btn_left:disabled {
-        background: black;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .tariffs__btn_left:hover {
-        box-shadow: none;
-    }
-
-    .tariffs__btn_right {
-        background: url('tariffs-right-icon.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .tariffs__btn_right:hover {
-        box-shadow: none;
-    }
-
     .tariffs__btns p {
         font-size: 12px;
     }
@@ -136,6 +124,20 @@
     }
 
     .tariffs__btn_right {
+        width: 7px;
+        height: 12px;
+        background-size: contain;
+        padding-left: 4px;
+    }
+
+    .tariffs__btn_left_active {
+        width: 7px;
+        height: 12px;
+        background-size: contain;
+        padding-right: 4px;
+    }
+
+    .tariffs__btn_right_active {
         width: 7px;
         height: 12px;
         background-size: contain;

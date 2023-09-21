@@ -3,7 +3,7 @@ import classes from './TariffItem.module.css'
 
 const TariffItem = (props) => {
     return (
-        <div className={classes.tariff__container}>
+        <div className={classes.tariff__container} id='tariff-item'>
             <div className={classes.tariff__title}>
                 <h3>{props.title}</h3>
                 <div className={classes.tariff__details}>
