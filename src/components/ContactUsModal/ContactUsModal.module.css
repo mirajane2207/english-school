@@ -41,6 +41,7 @@
 
 .modal__title button {
     height: 30px;
+    width: 30px;
     background: url('./close-icon.svg');
     background-repeat: no-repeat;
     background-position: center;

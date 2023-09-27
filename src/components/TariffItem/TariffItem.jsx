@@ -1,7 +1,12 @@
-import React from 'react'
+import {React, useState} from 'react'
 import classes from './TariffItem.module.css'
+import ContactUsModal from '../ContactUsModal/ContactUsModal';
 
 const TariffItem = (props) => {
+    const [modal, setModal] = useState(false);
+    function showModal() {
+        setModal(!modal)
+    }
     return (
         <div className={classes.tariff__container} id='tariff-item'>
             <div className={classes.tariff__title}>
@@ -14,7 +19,8 @@ const TariffItem = (props) => {
             <p className={classes.tariff__desc}>
                 {props.desc}
             </p>
-            <button>Придбати</button>
+            <button className={classes.tariff_btn} onClick={showModal}>Придбати</button>
+            <ContactUsModal visible={modal} setVisible={showModal} />
         </div>
     )
 }
