@@ -24,10 +24,11 @@
 
 .tariffs__items_container {
     width: 1000px;
+    padding: 10px;
     display: flex;
     align-items: flex-start;
     overflow-x: hidden;
-
+    overflow-y: hidden;
 }
 
 .tariffs__btns {
@@ -90,9 +91,9 @@
 @media(max-width: 520px) {
 
     .tariffs__container {
+        overflow-y: hidden;
         margin-bottom: 96px;
         height: auto;
-        overflow-y: hidden;
         flex-direction: column;
         max-width: 300px;
         gap: 24px;
@@ -142,5 +143,14 @@
         height: 12px;
         background-size: contain;
         padding-left: 4px;
+    }
+
+    .tariffs__items_container {
+        width: 300px;
+        overflow-x: scroll;
+    }
+
+    .tariffs__items_container::-webkit-scrollbar {
+        display: none;
     }
 }

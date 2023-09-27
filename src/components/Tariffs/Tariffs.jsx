@@ -5,34 +5,67 @@ import TariffItem from '../TariffItem/TariffItem'
 
 const Tariffs = (props) => {
 
-    const [isLeft, setIsLeft] = useState(true);
-    const [index, setIndex] = useState(3);
+    const [isLeftActive, setIsLeftActive] = useState(false);
+    const [isRightActive, setIsRightActive] = useState(true);
+    const [index, setIndex] = useState('#first');
     const listRef = useRef(null);
+
+    function scroll(qty) {
+        listRef.current.scrollBy({
+            left: qty,
+            behavior: "smooth"
+        })
+    }
 
     function scrollRight() {
         if (window.screen.availWidth > 520) {
-            scrollToIndex(3);
-            setIsLeft(false)
-
+            scroll(300)
+            setIsLeftActive(true)
+            setIsRightActive(false)
+        } else {
+            switch (index) {
+                case '#first':
+                    setIndex('#second');
+                    scroll(260)
+                    setIsLeftActive(true)
+                    break;
+                case '#second':
+                    setIndex('#third');
+                    scroll(250)
+                    setIsLeftActive(true)
+                    break;
+                case '#third':
+                    setIndex('#fourth');
+                    scroll(270)
+                    setIsRightActive(false)
+                    break;
+            }
         }
     }
 
-    function scrolLeft() {
+    function scrollLeft() {
         if (window.screen.availWidth > 520) {
-            scrollToIndex(0);
-            setIsLeft(true)
-
+            scroll(-300)
+            setIsLeftActive(false)
+            setIsRightActive(true)
+        } else {
+            switch (index) {
+                case '#second':
+                    setIndex('#first');
+                    scroll(-300)
+                    setIsLeftActive(false)
+                    break;
+                case '#third':
+                    setIndex('#second');
+                    scroll(-300)
+                    break;
+                case '#fourth':
+                    setIndex('#third');
+                    scroll(-280)
+                    setIsRightActive(true)
+                    break;
+            }
         }
-
-    }
-
-    function scrollToIndex(index) {
-        const listNode = listRef.current;
-        // This line assumes a particular DOM structure:
-        const imgNode = listNode.querySelectorAll('#tariff-item')[index];
-        imgNode.scrollIntoView({
-            behavior: 'smooth',
-        });
     }
 
     return (
@@ -40,9 +73,9 @@ const Tariffs = (props) => {
             <div className={classes.tariffs__title_container}>
                 <SectionTitle>Наші тарифи</SectionTitle>
                 <div className={classes.tariffs__btns} >
-                    <button className={isLeft ? classes.tariffs__btn_left : classes.tariffs__btn_left_active} onClick={() => scrolLeft()}></button>
+                    <button className={isLeftActive ? classes.tariffs__btn_left_active : classes.tariffs__btn_left} onClick={() => scrollLeft()}></button>
                     <p>1...4</p>
-                    <button className={isLeft ? classes.tariffs__btn_right : classes.tariffs__btn_right_active} onClick={() => scrollRight()}></button>
+                    <button className={isRightActive ? classes.tariffs__btn_right : classes.tariffs__btn_right_active} onClick={() => scrollRight()}></button>
                 </div>
             </div>
 
