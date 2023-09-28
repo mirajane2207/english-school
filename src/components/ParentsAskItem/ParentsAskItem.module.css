@@ -1,10 +1,10 @@
 .item__container {
     padding-bottom: 10px;
-    border-image: var(--strong-gradient) 60;
+    border-image: var(--strong-gradient) 1;
     border-bottom: 2px solid;
 }
 
-.item__opened_container button{
+.item__opened_container button {
     margin-top: 8px;
     width: 24px;
     background: url('./close-icon.svg');
@@ -37,15 +37,6 @@
     background-position: center;
     transform: rotate(180deg);
     transition: all 1s;
-}
-
-.item__closed_container {
-    display: flex;
-    width: 921px;
-    padding: 8px 0px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
 }
 
 .item__opened_content_container {
@@ -81,33 +72,30 @@
         font-size: 14px;
     }
 
-    .item__closed_container {
-        max-width: 300px;
-        padding: 0;
-    }
-
-    .item__opened_content_container {
-        height: 300px;
-        max-width: 300px;
-        padding: 0;
-
-        opacity: 0;
-        max-height: 0;
+    .item__opened_container {
         overflow: hidden;
-        -moz-transition: opacity .3s, max-height .3s;
-        -ms-transition: opacity .3s, max-height .3s;
-        transition: opacity .3s, max-height .3s;
-        display: none;
+        max-height: 1000px;
+        transition: all 1s cubic-bezier(1, 0, 1, 0);
+    }
+    
+    .item__opened_container.active {
+        max-height: 30px;
+        transition: all 1s cubic-bezier(0, 1, 0, 1);
     }
 
-    .btn_open {
+    .item__opened_container.active button {
         padding: 0;
         width: 16px;
         height: 8px;
         background-size: contain;
     }
 
-    .btn_close {
+    .item__opened_content_container {
+        padding: 4px 0;
+        max-width: 300px;
+    }
+
+    .item__opened_content_container button {
         padding: 0;
         width: 16px;
         height: 8px;
