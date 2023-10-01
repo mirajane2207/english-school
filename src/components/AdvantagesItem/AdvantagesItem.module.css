@@ -45,10 +45,10 @@
         align-items: flex-start;
         padding: 16px 0;
         gap: 16px;
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .advantage__container p {
-        max-width: 320px;
+        max-width: 300px;
     }
 }

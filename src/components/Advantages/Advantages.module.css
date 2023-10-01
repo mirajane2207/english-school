@@ -65,6 +65,7 @@
         margin-bottom: 96px;
         gap: 8px;
         flex-direction: column;
+        max-width: 300px;
     }
 
     .advantage__container {
@@ -72,11 +73,15 @@
         align-items: flex-start;
         padding: 16px 0;
         gap: 16px;
-        max-width: 320px;
+        max-width: 300px;
     }
 
-    .advantage__container p {
-        max-width: 320px;
+    .advantages__container p {
+        max-width: 300px;
+    }
+
+    .advantages__list {
+        width: 300px;
     }
 
 }

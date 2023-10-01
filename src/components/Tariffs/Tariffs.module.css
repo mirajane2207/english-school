@@ -95,7 +95,7 @@
         margin-bottom: 96px;
         height: auto;
         flex-direction: column;
-        max-width: 300px;
+        max-width: 320px;
         gap: 24px;
     }
 
@@ -103,7 +103,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        width: 320px;
     }
 
     .tariffs__btns p {
@@ -146,7 +146,7 @@
     }
 
     .tariffs__items_container {
-        width: 300px;
+        width: 320px;
         overflow-x: scroll;
     }
 
