@@ -142,4 +142,50 @@
         gap: 16px;
     }
 
+    .modal__title h3 {
+        font-size: 30px;
+    }
+
+    .modal__title button {
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+    }
+
+    .modal__info {
+        flex-direction: column;
+        min-width: 280px;
+        height: 60px;
+        padding: 8px;
+    }
+
+    .modal__content input {
+        width: 280px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .modal__content input::placeholder {
+        font-size: 16px;
+    }
+
+    .phone_input input {
+        width: 280px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .phone_input input {
+        padding-left: 56px;
+    }
+    
+    .phone_input img {
+        margin-right: 10px;
+        top: 16px;
+        left: 24px;
+        width: 24px;
+        height: 17px;
+        z-index: 1;
+    }
 }
