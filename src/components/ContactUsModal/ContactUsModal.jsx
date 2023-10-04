@@ -24,8 +24,8 @@ const ContactUsModal = ({visible, setVisible}) => {
                     <button onClick={hideModal}></button>
                 </div>
                 <div className={classes.modal__info}>
-                    <p>+38 097 160 14 37</p>
-                    <p>juliabodnar7@ukr.net</p>
+                    <p className={classes.modal__info_contact}>+38 097 160 14 37</p>
+                    <p className={classes.modal__info_contact}>juliabodnar7@ukr.net</p>
                 </div>
                 <input type="text" placeholder='Ім’я' required/>
                 <div className={classes.phone_input} >

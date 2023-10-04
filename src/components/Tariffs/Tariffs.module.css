@@ -24,7 +24,7 @@
 }
 
 .tariffs__items_container {
-    width: 70vw;
+    width: 72vw;
     padding: 10px;
     display: flex;
     align-items: flex-start;
@@ -156,11 +156,3 @@
         display: none;
     }
 }
-
-/* @media(min-width: 1840px) { 
-    .tariffs__items_container {
-        width: fit-content; 
-    }
-
-
-} */
