@@ -72,6 +72,7 @@
     .about__container {
         flex-direction: column;
         margin-bottom: -100px;
+        width: 300px;
     }
 
     .about__text {
@@ -82,7 +83,7 @@
 
     .about__adult_img {
         top: -210px;
-        left: 225px;
+        left: 210px;
         width: 102px;
         height: 183px;
         background: url('./about-adult-mobile-img.svg');
