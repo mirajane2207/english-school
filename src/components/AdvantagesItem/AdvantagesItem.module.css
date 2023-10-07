@@ -51,4 +51,8 @@
     .advantage__container p {
         max-width: 300px;
     }
+
+    .advantage__container:hover::before {
+        opacity: 0;
+    }
 }

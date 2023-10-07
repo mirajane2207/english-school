@@ -81,4 +81,8 @@
         padding-left: 69px;
         padding-right: 69px;
     }
+
+    .tariff__container:hover {
+        box-shadow: none;
+    }
 }
