@@ -22,9 +22,9 @@ const Form = (props) => {
                     window.screen.availWidth > 520
                         ? <div className={classes.form__container}>
                             <div className={classes.form__input_container}>
-                                <input type="text" placeholder='Ваше ім’я' />
-                                <input type="tel" placeholder='Номер телефону' />
-                                <input type="text" placeholder='Email' />
+                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
+                                <input type="tel" placeholder='Номер телефону' pattern="[0-9\+]+" minlength="13" maxlength="13"/>
+                                <input type="text" placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"/>
                             </div>
                             <div className={classes.form__btn_container}>
                                 <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>

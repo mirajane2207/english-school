@@ -99,6 +99,11 @@ button:hover {
   flex-direction: column;
 }
 
+input:invalid {
+  border-bottom: 2px solid rgba(222, 31, 31, 0.30);
+  border-image: none;
+}
+
 @media(max-width: 520px) {
 
   .inner_wrapper {

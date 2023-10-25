@@ -27,10 +27,10 @@ const ContactUsModal = ({visible, setVisible}) => {
                     <p className={classes.modal__info_contact}>+38 097 160 14 37</p>
                     <p className={classes.modal__info_contact}>juliabodnar7@ukr.net</p>
                 </div>
-                <input type="text" placeholder='Ім’я' required/>
+                <input type="text" placeholder='Ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
                 <div className={classes.phone_input} >
                     <img src={flagImg} alt="" />
-                    <input type="tel" placeholder='+380 хх ххх-хх-хх' maxLength={13} required/>
+                    <input type="tel" placeholder='+380 хх ххх-хх-хх' pattern="[0-9\+]+" minlength="13" maxlength="13"/>
                 </div>
                 <button className={classes.modal__contact_us_btn}>Передзвоніть мені</button>
                 <div className={classes.modal__info}>
