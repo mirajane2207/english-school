@@ -4,7 +4,7 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 import classes from './Reviews.module.css'
 import personImg from './reviews-person.svg'
 
-const Reviews = () => {
+const Reviews = ({scrollTo}) => {
     const [visible, setVisible] = useState(false);
     const rootClasses = [classes.reviews__items_container]
 
@@ -18,6 +18,7 @@ const Reviews = () => {
 
     function hideAll() {
         setVisible(false)
+        scrollTo('#reviews')
     }
 
     return (

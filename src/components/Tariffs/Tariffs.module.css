@@ -1,6 +1,5 @@
 .tariffs__container {
     margin-bottom: 160px;
-    scroll-margin-top: 200px;
     height: 520px;
     width: 100vw;
     display: flex;
@@ -84,6 +83,7 @@
 }
 
 .tariffs__title_container {
+    scroll-margin-top: 200px;
     display: flex;
     flex-direction: column;
     gap: 32px;

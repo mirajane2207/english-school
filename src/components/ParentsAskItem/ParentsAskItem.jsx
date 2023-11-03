@@ -22,7 +22,6 @@ const ParentsAskItem = (props) => {
                         <h3>{props.title}</h3>
                         <button onClick={changeState}></button>
                     </div>
-                    <hr />
                     <p>{props.text}</p>
                 </div>
         </div>

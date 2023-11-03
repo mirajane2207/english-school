@@ -58,11 +58,10 @@
 
 .about__children_rect {
     position: absolute;
-    top: 580px;
-    left: 710px;
-    width: 167px;
-    height: 1618px;
-    transform: rotate(-90deg);
+    bottom: -580px;
+    left: -2vh;
+    width: 110vw;
+    height: 167px;
     border-radius: 16px;
     z-index: -1;
     background: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);

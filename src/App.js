@@ -32,11 +32,10 @@ const App = () => {
           ? <div className='inner_wrapper'>
             <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Вчити англійську з нами легко' text='Школа англійської, з якою ти точно заговориш як Native Speaker' />
             <About mode={mode} title='Ми молода але вже успішна школа англійської' text='Школа англійської мови Pengli - це команда молодих, креативних викладачів, які постійно розвиваються, вдосконалюються, а також всім серцем люблять англійську мову і знають як зробити так аби ви без жодних страждань та дискомфорту заговорили англійською незгірше Бориса Джонсона. За нашими плечами 5 років досвіду викладання, а також великий багаж цінних знань, якими ми радо ділимось з нашими студентами.' />
-           {/* <ScrollSection/> */}
             <Lessons />
             <Advantages />
             <Tariffs/>
-            <Reviews />
+            <Reviews scrollTo={scrollTo}/>
             <Form mode={mode} />
             <Footer mode={mode} changeMode={changeMode} scrollTo={scrollTo}/>
           </div>

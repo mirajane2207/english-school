@@ -19,7 +19,7 @@ const Tariffs = (props) => {
 
     function scrollRight() {
         if (window.screen.availWidth > 520) {
-            scroll(300)
+            scroll(320)
             setIsLeftActive(true)
             setIsRightActive(false)
         } else {
@@ -69,8 +69,8 @@ const Tariffs = (props) => {
     }
 
     return (
-        <div className={classes.tariffs__container} id='tariffs'>
-            <div className={classes.tariffs__title_container}>
+        <div className={classes.tariffs__container}>
+            <div id='tariffs' className={classes.tariffs__title_container}>
                 <SectionTitle>Наші тарифи</SectionTitle>
                 <div className={classes.tariffs__btns} >
                     <button className={isLeftActive ? classes.tariffs__btn_left_active : classes.tariffs__btn_left} onClick={() => scrollLeft()}></button>

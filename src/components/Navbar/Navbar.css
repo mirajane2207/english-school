@@ -85,6 +85,11 @@ select {
 
 
 @media(max-width: 520px) {
+
+    .menu {
+        width: calc(100vw -20px);
+    }
+
     nav {
         margin-top: 5px;
     }
