@@ -51,7 +51,7 @@ const Navbar = (props) => {
                 <a href="/#" className={props.mode === 'children' ? 'header__mode_active' : 'header__mode'} onClick={setChildren}>Для дітей</a>
             </div>
             <div className='navbar'>
-                { windowWidth > 520
+                { windowWidth > 899
                     ? < ul >
                         <li><a href="/#" onClick={() => props.scrollTo("#about")}>Про школу</a></li>
                         <li><a href="/#" onClick={() => props.scrollTo('#tariffs')}>Тарифи</a></li>

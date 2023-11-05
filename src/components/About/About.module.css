@@ -67,6 +67,34 @@
     background: linear-gradient(135deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);
 }
 
+@media(max-width: 1439px) {
+    .about__container {
+        align-items: center;
+        max-width: 840px;
+        padding-right: 50px;
+    }
+    .about__text {
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 0;
+    }
+
+    .about__adult_img {
+        width: 275px;
+        height: 479px;
+    }
+    
+    .about__adult_img::after {
+        background-size: contain;
+        top: 51px;
+        left: 116px;
+        width: 210px;
+        height: 429px;
+
+    }
+}
+
+
 @media(max-width: 520px) {
     .about__container {
         flex-direction: column;

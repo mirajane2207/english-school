@@ -12,12 +12,12 @@ const About = (props) => {
                     <p className={props.mode === 'adult' ? classes.about__p_adult : classes.about__p_children}>{props.text}</p>
                 </div>
             </div>
-            <div className={props.mode === 'adult' ? classes.about__adult_img : classes.about__children_img}>
-                
-            </div>
+            
             { props.mode === 'children'
                 ? <div className={classes.about__children_rect}></div>
-                : <div></div>
+                : <div className={props.mode === 'adult' ? classes.about__adult_img : classes.about__children_img}>
+                
+                </div>
             }
         </div>
     )

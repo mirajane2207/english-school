@@ -1,56 +1,33 @@
 .header__container {
     height: 720px;
+    margin: auto;
     margin-bottom: 110px;
 }
 
-.header_img_adult {
-    background: var(--strong-gradient);
-    width: 572px;
-    height: 650px;
-    position: relative;
-    right: -800px;
-    top: -470px;
-    border-radius: 16px;
-    z-index: -1;
+.header__content_container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.header_img_adult::after {
-    content: "";
+.header_img_adult {
+    margin-right: auto;
+    margin-top: -96px;
+    background: url('./header-img.svg');
     position: absolute;
-    top: 230px;
-    left: -42px;
-    width: 615px;
-    height: 600px;
-    background-image: url('./header-img.svg');
-    background-repeat: no-repeat;
+    right: 0;
+    width: 642px;
+    height: 700px;
+    z-index: -1;
 }
 
 .header_img_children {
-    background: var(--strong-gradient);
-    width: 572px;
-    height: 650px;
-    position: relative;
-    right: -800px;
-    top: -500px;
-    border-radius: 16px;
+    margin-top: -96px;
+    background: url('./header-img-children.svg');
+    position: absolute;
+    right: 0px;
+    width: 600px;
+    height: 728px;
     z-index: -1;
-}
-
-.header_img_children::after {
-    content: "";
-    position: absolute;
-    left: 58px;
-    top: 195px;
-    width: 465px;
-    height: 552px;
-    background-image: url('./header-img-children.svg');
-    background-repeat: no-repeat;
-}
-
-.hand_img {
-    top: 230px;
-    right: 10px;
-    position: absolute;
 }
 
 .header__title {
@@ -62,6 +39,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 88%;
+    max-width: 1280px;
 }
 
 .header__text {
@@ -70,55 +48,116 @@
     font-size: 16px;
 }
 
-@media(max-width: 520px) {
+@media(min-width: 1440px) {
+    .header__container {
+        width: 1280px;
+    }
+
+    .header_img_adult {
+        width: 835px;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -82px;
+    }
+
+    .header_img_children {
+        width: 765px;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -82px;
+    }
+}
+
+
+@media(max-width: 1439px) {
 
     .header__container {
+        margin: 0;
+    }
+
+    .header__content_container {
+        max-width: 60vw;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        padding-top: 32px;
+    }
+
+    .header__title {
+        font-size: 66px;
+        max-width: 510px;
+        margin: 0;
+    }
+
+    .header__text {
+        margin: 0;
+    }
+
+    .header_img_adult {
+        height: 515px;
+        width: 377px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: -28px;
+        margin-top: -66px;
+    }
+
+    .header_img_children {
+        height: 550px;
+        width: 425px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -75px;
+    }
+
+    .header__title {
+        max-width: unset;
+    }
+
+}
+
+@media(max-width: 899px) {
+
+    .header__container {
+        width: calc(100vw - 20px);
+        padding: 0 10px;
         height: 250px;
-        width: 300px;
         margin-bottom: 95px;
+    }
+
+    .header__content {
+        gap: 24px;
+        padding-right: 33px;
     }
 
     .header__title {
         min-width: 229px;
-        max-width: 248px;
         font-size: 30px;
     }
 
     .header__text {
-        margin-bottom: 24px;
-        max-width: 152px;
+        max-width: 55vw;
         font-size: 12px;
     }
 
     .header_img_adult {
-        width: 137px;
-        height: 285px;
-        right: -190px;
-        top: -285px;
+        background: url('./header-img-mobile.svg');
+        height: 251px;
+        width: 157px;
+        margin-top: -40px;
+
     }
-    
-    .header_img_adult::after {
-        top: 150px;
-        left: -20px;
-        width: 220px;
-        height: 120px;
-        background-size: contain;
-    }
-    
+
     .header_img_children {
-        width: 137px;
-        height: 285px;
-        right: -190px;
-        top: -285px;
-    }
-    
-    .header_img_children::after {
-        content: "";
-        position: absolute;
-        left: -18px;
-        top: 150px;
-        width: 134px;
-        height: 158px;
-        background-size: contain;
+        background: url('./header-img-children-mobile.svg');
+        background-repeat: no-repeat;
+        height: 269px;
+        width: 141px;
+        margin-top: -40px;
+
     }
 }

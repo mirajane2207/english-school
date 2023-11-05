@@ -59,6 +59,19 @@
     min-width: 215px;
 }
 
+@media(max-width: 1280px) {
+    .advantages__container {
+        max-width: 840px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages__list {
+        max-width: 840px;
+    }
+}
+
+
 @media(max-width: 520px) {
 
     .advantages__container {

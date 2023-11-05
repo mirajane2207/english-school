@@ -132,7 +132,7 @@
     z-index: 1;
 }
 
-input:invalid {
+.modal__inp:invalid {
     background: transparent;
     border: 1px solid rgba(222, 31, 31, 0.30);
     border-image: none;

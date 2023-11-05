@@ -152,6 +152,11 @@ input:focus::placeholder {
         padding-bottom: 16px;
     }
 
+    input:invalid {
+        border-bottom: 2px solid rgba(222, 31, 31, 0.30);
+        border-image: none;
+      }
+
     .form__btn_container button {
         width: 100%;
         color: #020202;
