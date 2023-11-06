@@ -75,10 +75,6 @@
         margin: 0;
     }
 
-    .header__content_container {
-        max-width: 60vw;
-    }
-
     .header__content {
         display: flex;
         flex-direction: column;
@@ -147,9 +143,9 @@
     .header_img_adult {
         background: url('./header-img-mobile.svg');
         height: 251px;
-        width: 157px;
+        width: 145px;
         margin-top: -40px;
-
+        margin-right: -20px;
     }
 
     .header_img_children {
