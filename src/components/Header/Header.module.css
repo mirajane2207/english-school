@@ -121,7 +121,6 @@
 
     .header__container {
         width: calc(100vw - 20px);
-        padding: 0 10px;
         height: 250px;
         margin-bottom: 0px;
     }
