@@ -1,19 +1,42 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import classes from './Lessons.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import lessonsImg from './lessons-img.svg'
-import lessonsMobileImg from './lessons-img-mobile.svg'
 import LessonItem from '../LessonItem/LessonItem'
+import lessonsBtn from './lessons-btn.svg'
 
 const Lessons = () => {
+
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className={classes.lessons___container}>
-      <SectionTitle>Уроки для всіх</SectionTitle>
+      {
+        windowWidth > 899
+          ? <SectionTitle>Уроки для всіх</SectionTitle>
+          : <div className={classes.section__title_container}>
+            <SectionTitle>Уроки для всіх</SectionTitle>
+            <img src={lessonsBtn} alt=''/>
+          </div>
+      }
       <div className={classes.lessons__list_container}>
         {
-          window.screen.availWidth > 520
+          windowWidth > 899
             ? <img src={lessonsImg} alt="" />
-            : <img src={lessonsMobileImg} alt="" />
+            : <span></span>
         }
         <div className={classes.lessons__list}>
           <LessonItem number='01' title='Новачкам' desc='За максимально короткий час наші викладачі дадуть вам всю необхідну базу' />

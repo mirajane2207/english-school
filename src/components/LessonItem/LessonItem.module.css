@@ -35,3 +35,11 @@
 .lesson__content h3 {
     line-height: 100%;
 }
+
+
+@media (max-width: 899px) {
+.lesson__container {
+    width: calc(100vw - 20px);
+}
+    
+}
