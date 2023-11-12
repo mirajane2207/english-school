@@ -40,6 +40,15 @@
     align-items: center;
 }
 
+@media(max-width: 1439px) {
+    .review__container {
+        width: auto;
+        height: auto;
+        gap: 20px;
+    }
+    
+}
+
 @media(max-width: 899px) {
 
     .review__container {

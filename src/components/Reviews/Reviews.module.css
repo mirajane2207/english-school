@@ -36,7 +36,7 @@
 
 .reviews__img {
     position: absolute;
-    left: -6vw;
+    left: -80px;
     top: 270px;
 }
 
@@ -45,6 +45,24 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
+}
+
+@media(max-width: 1439px) {
+    .reviews__items_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews__img {
+        width: 231px;
+        height: 136px;
+        top: 200px;
+        left: -30px;
+    }
+
+    .test::after {
+        left: 264px;
+    }
+
 }
 
 
