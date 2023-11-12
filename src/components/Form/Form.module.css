@@ -219,7 +219,7 @@ input:focus::placeholder {
         width: 77px;
         height: 135px;
         top: -27px;
-        /* left: -63px; */
+        left: 160px;
     }
 
     .form__title {

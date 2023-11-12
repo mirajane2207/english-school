@@ -64,13 +64,17 @@ footer {
 
 @media(max-width: 899px) {
     footer {
-        width: 320px;
+        flex-direction: column;
+        width: 100vw;
         padding: 24px 10px;
+        gap: 16px;
     }
 
     .footer__content_container {
+        width: calc(100vw - 20px);
+padding: 0 10px;
         flex-direction: column;
-        gap: 16px;
+        gap: 28px;
     }
 
     .footer__header {
@@ -79,6 +83,7 @@ footer {
     }
 
     .footer__logo {
+        padding-left: 10px;
         width: 63px;
         height: 35px;
     }
