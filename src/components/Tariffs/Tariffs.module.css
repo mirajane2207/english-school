@@ -60,7 +60,7 @@
 
 .tariffs__btn_left_active:hover {
     box-shadow: none;
-} 
+}
 
 .tariffs__btn_right {
     background: url('tariffs-right-icon.svg');
@@ -89,11 +89,55 @@
     gap: 32px;
 }
 
-@media(max-width: 1439px) { 
+@media(max-width: 1439px) {
     .tariffs__container {
-        width: calc(100vw - 60px);
-
+        width: calc(100vw - 20px);
+        gap: 72px;
     }
+
+.tariffs__container::before {
+    height: 260px;
+    left: 385px;
+    width: calc(100vw);
+}
+
+    .tariffs__title_container {
+        width: 155px;
+    }
+
+    .tariffs__btn_left {
+        width: 17px;
+        height: 31px;
+        background-size: contain;
+        padding: 0 16px;
+    }
+
+    .tariffs__btn_right {
+        width: 17px;
+        height: 31px;
+        background-size: contain;
+        padding: 0 16px;
+    }
+
+    .tariffs__btn_left_active {
+        width: 17px;
+        height: 31px;
+        background-size: contain;
+        padding: 0 16px;
+    }
+
+    .tariffs__btn_right_active {
+        width: 17px;
+        height: 31px;
+        background-size: contain;
+        padding: 0 16px;
+    }
+
+    .tariffs__items_container {
+        width: 85vw;
+        padding: 0;
+    }
+
 
 }
 
@@ -133,28 +177,24 @@
     .tariffs__btn_left {
         width: 7px;
         height: 12px;
-        background-size: contain;
         padding-right: 4px;
     }
 
     .tariffs__btn_right {
         width: 7px;
         height: 12px;
-        background-size: contain;
         padding-left: 4px;
     }
 
     .tariffs__btn_left_active {
         width: 7px;
         height: 12px;
-        background-size: contain;
         padding-right: 4px;
     }
 
     .tariffs__btn_right_active {
         width: 7px;
         height: 12px;
-        background-size: contain;
         padding-left: 4px;
     }
 
