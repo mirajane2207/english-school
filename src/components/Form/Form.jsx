@@ -10,7 +10,7 @@ const Form = (props) => {
                 props.mode === 'adult'
                     ? <div className={classes.form__adult_title}>
                         <img src={adultImg} alt="" />
-                        <h1 className={classes.form__title}>Втілюємо мрії багатьох</h1>
+                        <h1 className={classes.form__title}>Втілюємо <br/>мрії багатьох</h1>
                     </div>
                     : <div className={classes.form__children_title}>
                         <img src={cildrenImg} alt="" />
@@ -19,7 +19,7 @@ const Form = (props) => {
             }
             <form action="">
                 {
-                    window.screen.availWidth > 520
+                    window.screen.availWidth > 899
                         ? <div className={classes.form__container}>
                             <div className={classes.form__input_container}>
                                 <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
@@ -28,18 +28,18 @@ const Form = (props) => {
                             </div>
                             <div className={classes.form__btn_container}>
                                 <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
-                                <button>Відправити заявку</button>
+                                <button className={classes.form__btn}>Відправити заявку</button>
                             </div>
                         </div>
                         : <div className={classes.form__container}>
                             <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
                             <div className={classes.form__input_container}>
-                                <input type="text" placeholder='Ваше ім’я' />
-                                <input type="number" placeholder='Номер телефону' />
-                                <input type="text" placeholder='Email' />
+                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
+                                <input type="number" placeholder='Номер телефону' pattern="[0-9\+]+"/>
+                                <input type="text" placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" />
                             </div>
                             <div className={classes.form__btn_container}>
-                                <button>Відправити заявку</button>
+                                <button className={classes.form__btn}>Відправити заявку</button>
                             </div>
                         </div>
                 }
