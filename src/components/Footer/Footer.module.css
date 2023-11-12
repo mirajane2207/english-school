@@ -66,14 +66,14 @@ footer {
 @media(max-width: 899px) {
     footer {
         flex-direction: column;
-        width: 100vw;
+        width: calc(100vw - 10px);
         padding: 24px 10px;
         gap: 16px;
     }
 
     .footer__content_container {
         width: calc(100vw - 20px);
-padding: 0 10px;
+        padding: 0 10px;
         flex-direction: column;
         gap: 28px;
     }

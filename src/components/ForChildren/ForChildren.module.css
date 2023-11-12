@@ -13,16 +13,32 @@
     gap: 32px;
 }
 
-@media(max-width: 520px) {
+@media(max-width: 1439px) {
     .for_children__container {
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 140px;
+    }
+
+    .for_children__content_container {
+        width: calc(100vw - 60px);
+    }
+
+}
+
+
+
+@media(max-width: 899px) {
+    .for_children__container {
+        align-items: flex-start;
         gap: 24px;
         height: auto;
         margin-bottom: 96px;
     }
 
     .for_children__content_container {
+        width: calc(100vw - 20px);
         display: flex;
         flex-direction: column;
         gap: 16px;

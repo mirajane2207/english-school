@@ -82,6 +82,7 @@
         gap: 32px;
         align-items: flex-start;
         padding-top: 32px;
+        max-width: 67%;
     }
 
     .header__title {
