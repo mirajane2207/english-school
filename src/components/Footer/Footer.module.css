@@ -46,7 +46,23 @@ footer {
     cursor: pointer;
 }
 
-@media(max-width: 520px) {
+@media(max-width: 1439px) {
+    footer {
+        width: calc(100vw - 124px);
+    }
+
+    .footer__content_container {
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .footer__item_container {
+        width: auto;
+    }
+}
+
+
+@media(max-width: 899px) {
     footer {
         width: 320px;
         padding: 24px 10px;
