@@ -40,9 +40,14 @@
     align-items: center;
 }
 
-@media(max-width: 520px) {
+@media(max-width: 899px) {
+
+    .review__container {
+        width: calc(100vw - 84px);
+    }
+
+
     .review__container p {
-        max-width: 210px;
         font-size: 16px;
     }
 }
