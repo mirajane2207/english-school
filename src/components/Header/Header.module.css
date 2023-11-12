@@ -123,7 +123,7 @@
     .header__container {
         width: calc(100vw - 20px);
         height: 250px;
-        margin-bottom: 0px;
+        margin-bottom: 56px;
     }
 
     .header__content {

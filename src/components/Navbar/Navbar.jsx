@@ -5,17 +5,6 @@ import logo from './logo.svg';
 const Navbar = (props) => {
 
     const [isNavbarExpanded, setIsNavbarExpanded] = useState(false)
-    // const [isMobile, setIsMobile] = useState(false)
-
-    // window.onresize = () => {
-    //     if (window.screen.availWidth < 520) {
-    //         setIsMobile(true)
-    //     } else {
-    //         setIsMobile(false)
-    //     }
-    // }
-
-
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

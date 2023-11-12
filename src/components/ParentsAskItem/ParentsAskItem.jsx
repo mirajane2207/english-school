@@ -1,5 +1,5 @@
-import { React, useRef, useState } from 'react'
-import classes from './ParentsAskItem.module.css'
+import { React, useState } from 'react';
+import classes from './ParentsAskItem.module.css';
 
 const ParentsAskItem = (props) => {
     const [state, setState] = useState('closed');
@@ -22,7 +22,11 @@ const ParentsAskItem = (props) => {
                         <h3>{props.title}</h3>
                         <button onClick={changeState}></button>
                     </div>
-                    <p>{props.text}</p>
+                    {
+                        !visible
+                        ? <p>{props.text}</p>
+                        : <span></span>
+                    }
                 </div>
         </div>
     )

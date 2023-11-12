@@ -34,6 +34,7 @@
 @media(max-width: 1439px) {
     .lessons___container {
         gap: 54px;
+        margin-bottom: 150px;
     }
 
     .lessons__list_container {

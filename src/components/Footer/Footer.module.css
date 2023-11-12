@@ -53,9 +53,14 @@ footer {
     }
 
     .footer__content_container {
-        flex-wrap: wrap;
-        justify-content: space-evenly
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: inherit;
     }
+
+.footer__header {
+    width: 100%;
+}
 
     .footer__item_container {
         width: auto;
@@ -74,6 +79,7 @@ footer {
     .footer__content_container {
         width: calc(100vw - 20px);
         padding: 0 10px;
+        display: flex;
         flex-direction: column;
         gap: 28px;
     }
