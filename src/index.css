@@ -25,6 +25,7 @@ body {
 .wrapper {
   width: calc(100vw - 160px);
   padding: 0 80px;
+  overflow-x: hidden;
 }
 
 a {
