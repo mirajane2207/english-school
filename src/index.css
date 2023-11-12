@@ -7,11 +7,11 @@
   --light-gradient: linear-gradient(90deg, #EEDCDD 0%, #E3DCEF 33.27%, #DCDCEF 66.39%, #D9E8F2 100%);
 }
 
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
+} */
 
 body {
   background: #F1F1F1;

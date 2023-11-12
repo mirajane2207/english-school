@@ -70,6 +70,6 @@
     }
 
     .lessons__list_container {
-        width: calc(100vw - 20px);
+        max-width: calc(100vw - 20px);
     }
 }

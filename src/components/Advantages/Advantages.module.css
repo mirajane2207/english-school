@@ -68,8 +68,9 @@
     }
 
     .advantage__container {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 76px);
         justify-content: flex-start;
+        gap: 24px;
     }
 
     .advantages__list {
@@ -78,10 +79,15 @@
 
     .advantage__title {
         font-size: 23px;
+        min-width: 146px;
     }
 
     .advantage__desc {
         width: auto;
+    }
+
+    .advantage__container:hover::before {
+        opacity: 0;
     }
 }
 
@@ -108,6 +114,8 @@
     .advantages__list {
         width: calc(100vw - 60px);
     }
+
+    
 
 
 }

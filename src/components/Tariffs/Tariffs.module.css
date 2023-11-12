@@ -89,23 +89,34 @@
     gap: 32px;
 }
 
-@media(max-width: 520px) {
+@media(max-width: 1439px) { 
+    .tariffs__container {
+        width: calc(100vw - 60px);
+
+    }
+
+}
+
+
+@media(max-width: 899px) {
 
     .tariffs__container {
         overflow-y: hidden;
         margin-bottom: 96px;
         height: auto;
         flex-direction: column;
-        max-width: 320px;
+        width: calc(100vw - 20px);
+        padding: 0 10px;
         gap: 24px;
         align-items: center;
     }
 
     .tariffs__title_container {
         flex-direction: row;
+        padding-left: 10px;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        width: calc(100vw - 20px);
     }
 
     .tariffs__btns p {
@@ -148,7 +159,7 @@
     }
 
     .tariffs__items_container {
-        width: 320px;
+        width: calc(100vw - 20px);
         overflow-x: scroll;
     }
 

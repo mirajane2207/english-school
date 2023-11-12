@@ -42,16 +42,22 @@
 @media(max-width: 1439px) {
     .advantage__title {
         font-size: 23px;
+        min-width: 146px;
     }
 
     .advantage__container {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 76px);
         justify-content: flex-start;
+        gap: 24px;
     }
 
-.advantage__desc {
-    width: auto;
-}
+    .advantage__desc {
+        width: auto;
+    }
+
+    .advantage__container:hover::before {
+        opacity: 0;
+    }
 
 }
 
@@ -62,9 +68,5 @@
         align-items: flex-start;
         padding: 16px 0;
         gap: 16px;
-    }
-
-    .advantage__container:hover::before {
-        opacity: 0;
     }
 }
