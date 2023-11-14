@@ -98,10 +98,6 @@
         letter-spacing: -1.56px;
     }
 
-    .about__text {
-        font-size: 12px;
-    }
-
     .about__adult_img {
         grid-row: 1/5;
         width: 275px;

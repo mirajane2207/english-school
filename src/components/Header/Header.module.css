@@ -51,21 +51,26 @@
 @media(min-width: 1440px) {
     .header__container {
         width: 1280px;
+        position: relative;
+    }
+
+    .header__title {
+        max-width: 896px;
     }
 
     .header_img_adult {
         width: 835px;
         background-repeat: no-repeat;
-        position: relative;
-        right: -82px;
+        position: absolute;
+        right: -317px;
     }
 
     .header_img_children {
-        width: 1140px;
+        width: 635px;
         height: 750px;
         background-repeat: no-repeat;
-        position: relative;
-        right: -177px;
+        position: absolute;
+        right: -176px;
     }
 }
 
@@ -75,6 +80,7 @@
     .header__container {
         height: auto;
         margin-bottom: 160px;
+        position: relative;
     }
 
     .header__content {
