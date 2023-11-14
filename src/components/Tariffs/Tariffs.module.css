@@ -24,7 +24,6 @@
 
 .tariffs__items_container {
     width: 72vw;
-    padding: 10px;
     display: flex;
     align-items: flex-start;
     overflow-x: hidden;

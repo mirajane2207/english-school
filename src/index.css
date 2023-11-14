@@ -100,6 +100,14 @@ button:hover {
   flex-direction: column;
 }
 
+@media(min-width: 1440px) {
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 160px;
+  }
+}
+
 @media(max-width: 1439px) {
   .wrapper {
     width: calc(100vw - 60px);

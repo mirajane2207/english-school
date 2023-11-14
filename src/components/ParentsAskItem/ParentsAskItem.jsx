@@ -2,11 +2,9 @@ import { React, useState } from 'react';
 import classes from './ParentsAskItem.module.css';
 
 const ParentsAskItem = (props) => {
-    const [state, setState] = useState('closed');
     const [visible, setVisible] = useState(true)
 
     function changeState() {
-        setState(previous => previous === 'closed' ? 'opened' : 'closed')
         setVisible(!visible)
     }
 

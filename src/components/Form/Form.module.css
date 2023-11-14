@@ -162,6 +162,16 @@ input:focus::placeholder {
     }
 }
 
+@media(min-width: 1440px) {
+    .form__wrapper {
+        width: 1280px;
+    }
+
+    .form__container {
+        width: 1216px;
+    }
+}
+
 @media(max-width: 899px) {
 
     .form__wrapper {

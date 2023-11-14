@@ -47,6 +47,13 @@
     gap: 40px;
 }
 
+@media(min-width: 1440px) {
+    .reviews__container {
+        width: 1280px;
+    }
+
+}
+
 @media(max-width: 1439px) {
     .reviews__items_container {
         grid-template-columns: repeat(2, 1fr);

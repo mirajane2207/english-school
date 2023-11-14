@@ -3,7 +3,6 @@
     display: flex;
     align-items: flex-start;
     gap: 62px;
-    width: 920px;
 }
 
 .advantages__list {
@@ -27,7 +26,6 @@
     justify-content: space-between;
     transition-property: background-color, color;
     transition-duration: 1s;
-    width: 920px;
     position: relative;
     z-index: 1000;
 }

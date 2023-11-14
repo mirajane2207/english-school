@@ -61,10 +61,11 @@
     }
 
     .header_img_children {
-        width: 765px;
+        width: 1140px;
+        height: 750px;
         background-repeat: no-repeat;
         position: relative;
-        right: -82px;
+        right: -177px;
     }
 }
 

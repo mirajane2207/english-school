@@ -7,7 +7,6 @@
     transition-property: background-color, color;
     transition-duration: 1s;
     border-image: var(--strong-gradient) 1;
-    width: 920px;
     border-bottom: 2px solid;
     position: relative;
     z-index: 1000;
