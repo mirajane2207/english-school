@@ -85,6 +85,7 @@ const Tariffs = (props) => {
                 <TariffItem title='Разовий' qty='1 заняття' price='280 грн' desc='Проходить індивідуально, для тих хто прагне розібрати та вдосконалити конкретні теми' />
                 <TariffItem title='Інтенсивний' qty='12 занять' price='2800 грн' desc='3 заняття на тиждень + участь в двух розмовних клубах на вибір' />
             </div>
+            <span className={classes.rect}></span>
         </div>
     )
 }

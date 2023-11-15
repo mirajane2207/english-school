@@ -21,7 +21,7 @@
     margin: 0;
 }
 
-@media(max-width: 1439px) {
+@media(max-width: 1159px) {
     .parents_ask__container {
         width: calc(100vw - 60px);
         flex-direction: column;

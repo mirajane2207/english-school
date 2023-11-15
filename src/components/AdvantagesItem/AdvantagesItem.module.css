@@ -38,7 +38,7 @@
     min-width: 215px;
 }
 
-@media(max-width: 1439px) {
+@media(max-width: 1159px) {
     .advantage__title {
         font-size: 23px;
         min-width: 146px;

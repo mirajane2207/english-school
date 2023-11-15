@@ -3,7 +3,7 @@
     margin-bottom: 180px;
     margin-right: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 62px;
     width: fit-content;
@@ -12,10 +12,11 @@
 .lessons__list_container {
     display: flex;
     padding: 10px 0px;
+    padding-right: 10vw;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
-    max-width: 1000px;
+    max-width: 66vw;
     overflow-x: scroll;
 }
 
@@ -31,7 +32,22 @@
     justify-content: space-between;
 }
 
+@media(min-width: 1440px) {
+    .lessons__list_container {
+        max-width: 60vw;
+        padding-right: 10vw;
+    }
+}
+
 @media(max-width: 1439px) {
+    .lessons___container {
+        width: 100vw;
+    }
+    
+}
+
+
+@media(max-width: 1159px) {
     .lessons___container {
         gap: 54px;
         margin-bottom: 150px;

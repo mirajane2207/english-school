@@ -55,7 +55,7 @@
     margin-bottom: 24px;
 }
 
-@media(max-width: 1439px) {
+@media(max-width: 1159px) {
     .item__container {
         width: calc(100vw - 60px);
         gap: 0;
