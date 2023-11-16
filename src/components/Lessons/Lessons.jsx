@@ -34,7 +34,7 @@ const Lessons = () => {
       }
       <div className={classes.lessons__list_container}>
         {
-          windowWidth > 899
+          windowWidth > 789
             ? <img src={lessonsImg} alt="" />
             : <span></span>
         }
