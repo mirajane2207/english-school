@@ -86,7 +86,7 @@
     gap: 32px;
 }
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
     .tariffs__container {
         width: calc(100vw - 20px);
         gap: 72px;
@@ -140,7 +140,7 @@
 }
 
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
 
     .tariffs__container {
         overflow-y: hidden;

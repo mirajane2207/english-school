@@ -25,7 +25,7 @@ const Lessons = () => {
   return (
     <div className={classes.lessons___container}>
       {
-        windowWidth > 899
+        windowWidth > 789
           ? <SectionTitle>Уроки для всіх</SectionTitle>
           : <div className={classes.section__title_container}>
             <SectionTitle>Уроки для всіх</SectionTitle>

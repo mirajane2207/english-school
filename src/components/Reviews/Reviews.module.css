@@ -54,7 +54,7 @@
 
 }
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
     .reviews__items_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -72,7 +72,7 @@
 
 }
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
     .test::after {
         left: 0;
     }
@@ -81,7 +81,7 @@
 
 
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
 
     .reviews__container {
         scroll-margin-top: 80px;

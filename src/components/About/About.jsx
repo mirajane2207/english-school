@@ -19,7 +19,7 @@ const About = (props) => {
 
     return (
         <div id='about'>
-            {windowWidth < 899
+            {windowWidth < 789
                 ? <div className={classes.section__container}>
                     <h2 className={classes.section__title}>Про школу</h2>
                     <h3 className={classes.about__title}>{props.title}</h3>

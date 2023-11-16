@@ -64,7 +64,7 @@
 }
 
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
     .advantages__container {
         width: calc(100vw - 60px);
         flex-direction: column;
@@ -99,7 +99,7 @@
 }
 
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
 
     .advantages__container {
         padding: 0 10px;

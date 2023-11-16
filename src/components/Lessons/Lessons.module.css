@@ -47,7 +47,7 @@
 }
 
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
     .lessons___container {
         gap: 54px;
         margin-bottom: 150px;
@@ -59,7 +59,7 @@
 }
 
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
     .lessons___container {
         width: calc(100vw - 20px);
         padding: 0 10px;

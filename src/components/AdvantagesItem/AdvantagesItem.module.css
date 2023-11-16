@@ -38,7 +38,7 @@
     min-width: 215px;
 }
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
     .advantage__title {
         font-size: 23px;
         min-width: 146px;
@@ -61,7 +61,7 @@
 
 }
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
     .advantage__container {
         width: calc(100vw - 20px);
         flex-direction: column;

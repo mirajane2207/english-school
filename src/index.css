@@ -112,7 +112,7 @@ button:hover {
   }
 }
 
-@media(max-width: 1319px) {
+@media(max-width: 1184px) {
   .wrapper {
     width: calc(100vw - 60px);
     padding: 0 30px;
@@ -141,7 +141,7 @@ button:hover {
 }
 
 
-@media(max-width: 899px) {
+@media(max-width: 789px) {
 
   .inner_wrapper {
     display: flex;

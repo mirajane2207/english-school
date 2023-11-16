@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './Form.module.css'
 import adultImg from './form-adult-img.svg'
 import cildrenImg from './form-children-img.svg'
 
 const Form = (props) => {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
     return (
         <div className={classes.form__wrapper}>
             {
@@ -19,7 +34,7 @@ const Form = (props) => {
             }
             <form action="">
                 {
-                    window.screen.availWidth > 899
+                    windowWidth < 789
                         ? <div className={classes.form__container}>
                             <div className={classes.form__input_container}>
                                 <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
