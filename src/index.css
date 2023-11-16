@@ -112,7 +112,7 @@ button:hover {
   }
 }
 
-@media(max-width: 1159px) {
+@media(max-width: 1319px) {
   .wrapper {
     width: calc(100vw - 60px);
     padding: 0 30px;

@@ -9,7 +9,7 @@
     line-height: 100%;
 }
 
-@media(max-width: 1159px) {
+@media(max-width: 1319px) {
     .section__title {
         font-size: 50px;
         min-width: 220px;

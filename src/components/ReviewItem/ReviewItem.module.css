@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-@media(max-width: 1159px) {
+@media(max-width: 1319px) {
     .review__container {
         width: auto;
         height: auto;

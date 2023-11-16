@@ -70,7 +70,7 @@
     }
 }
 
-@media (max-width: 1159px) {
+@media (max-width: 1319px) {
     .section__container {
         width: calc(100vw - 60px);
         grid-template-columns: 2fr 0.5fr;

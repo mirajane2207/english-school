@@ -50,19 +50,26 @@
 
 
 .advantage__desc {
-    width: 655px;
+    max-width: 655px;
 }
 
 .advantage__title {
     min-width: 215px;
 }
 
-@media(max-width: 1159px) {
+@media(max-width: 1439px) {
+    .advantages__list {
+     max-width: 70%;
+    }
+}
+
+
+@media(max-width: 1319px) {
     .advantages__container {
         width: calc(100vw - 60px);
         flex-direction: column;
         align-items: center;
-        margin-bottom: 120px;
+        margin-bottom: 150px;
     }
 
     .advantage__container {
@@ -73,6 +80,7 @@
 
     .advantages__list {
         width: calc(100vw - 60px);
+     max-width: 100%;
     }
 
     .advantage__title {
@@ -82,6 +90,7 @@
 
     .advantage__desc {
         width: auto;
+        max-width: unset;
     }
 
     .advantage__container:hover::before {

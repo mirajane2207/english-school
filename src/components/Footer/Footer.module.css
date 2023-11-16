@@ -53,7 +53,7 @@ footer {
     }
 }
 
-@media(max-width: 1159px) {
+@media(max-width: 1319px) {
     footer {
         width: calc(100vw - 124px);
     }
