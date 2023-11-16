@@ -124,6 +124,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -75px;
+        right: -33px;
     }
 
     .header__title {

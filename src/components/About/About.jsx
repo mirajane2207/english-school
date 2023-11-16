@@ -33,6 +33,7 @@ const About = (props) => {
                         <p className={classes.about__text}>{props.text}</p>
                     </div>
                     <div className={props.mode === 'adult' ? classes.about__adult_img : classes.about__children_img}></div>
+                    <span className={props.mode === 'children' ? classes.about__rect : ''}></span>
                 </div>
             }
         </div>
