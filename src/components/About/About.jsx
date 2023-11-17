@@ -18,7 +18,7 @@ const About = (props) => {
     }, []);
 
     return (
-        <div id='about'>
+        <div id='about' className={classes.wrapper}>
             {windowWidth < 789
                 ? <div className={classes.section__container}>
                     <h2 className={classes.section__title}>Про школу</h2>
@@ -33,9 +33,9 @@ const About = (props) => {
                         <p className={classes.about__text}>{props.text}</p>
                     </div>
                     <div className={props.mode === 'adult' ? classes.about__adult_img : classes.about__children_img}></div>
-                    <span className={props.mode === 'children' ? classes.about__rect : ''}></span>
                 </div>
             }
+            <span className={props.mode === 'children' ? classes.about__rect : ''}></span>
         </div>
     )
 }
