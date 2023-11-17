@@ -32,7 +32,7 @@
 
 }
 
-@media(max-width: 789px) {
+@media(max-width: 820px) {
     .parents_ask__container {
         flex-direction: column;
         margin-top: 0;

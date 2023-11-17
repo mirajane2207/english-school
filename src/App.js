@@ -26,7 +26,7 @@ const App = () => {
 
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper1'>
       {
         mode === 'adult'
           ? <div className='inner_wrapper'>
@@ -41,7 +41,7 @@ const App = () => {
           </div>
           : <div className='inner_wrapper'>
             {
-              window.screen.availWidth > 520 
+              window.screen.availWidth > 820
             ? <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.' />
             : <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз!' />
 

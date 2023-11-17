@@ -57,7 +57,7 @@
     
 }
 
-@media(max-width: 789px) {
+@media(max-width: 820px) {
 
     .review__container {
         width: calc(100vw - 84px);

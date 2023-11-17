@@ -75,7 +75,7 @@ padding: 12px 77.5px;
 
 
 
-@media(max-width: 789px) {
+@media(max-width: 820px) {
     .tariff__container {
         width: 220px;
         gap: 24px;

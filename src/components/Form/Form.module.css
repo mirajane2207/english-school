@@ -184,7 +184,7 @@ input:focus::placeholder {
     }
 }
 
-@media(max-width: 789px) {
+@media(max-width: 820px) {
 
     .form__wrapper {
         width: calc(100vw - 20px);
