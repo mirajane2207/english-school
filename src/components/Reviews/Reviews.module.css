@@ -50,11 +50,26 @@
 @media(min-width: 1440px) {
     .reviews__container {
         width: 1280px;
+        margin: 0 auto;
     }
 
 }
 
+@media(max-width: 1439px) {
+    .reviews__container {
+        width:  calc(100vw - 80px);
+        padding: 0 40px;
+    }
+
+}
+
+
 @media(max-width: 1184px) {
+    .reviews__container {
+        width:  calc(100vw - 60px);
+        padding: 0 30px;
+    }
+
     .reviews__items_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -91,6 +106,7 @@
         align-items: flex-start;
         gap: 24px;
         width: calc(100vw - 20px);
+        padding: 0 10px;
     }
 
     .reviews__items_container {
