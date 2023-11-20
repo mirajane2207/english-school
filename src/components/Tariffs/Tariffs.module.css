@@ -21,6 +21,7 @@
 }
 
 .tariffs__items_container {
+    padding-top: 5px;
     width: 72vw;
     display: flex;
     align-items: flex-start;
@@ -86,18 +87,40 @@
     gap: 32px;
 }
 
+@media(min-width: 1440px) {
+    .tariffs__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        overflow-x: visible;
+    }
+
+}
+
+@media(max-width: 1439px) {
+    .tariffs__container {
+        width: calc(100vw - 40px);
+        padding-left: 40px;
+    }
+
+.tariffs__items_container {
+    width: 100%;
+}
+
+}
+
 @media(max-width: 1184px) {
     .tariffs__container {
-        width: calc(100vw - 20px);
+        width: calc(100vw - 30px);
+        padding-left: 30px;
         gap: 72px;
         margin-bottom: 250px;
     }
 
-.tariffs__container::before {
-    height: 260px;
-    left: 385px;
-    width: calc(100vw);
-}
+    .tariffs__container::before {
+        height: 260px;
+        left: 385px;
+        width: calc(100vw);
+    }
 
     .tariffs__title_container {
         width: 155px;
