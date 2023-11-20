@@ -61,6 +61,11 @@
         padding: 0 40px;
     }
 
+.reviews__img {
+    left: -40px;
+}
+
+
 }
 
 
@@ -78,7 +83,7 @@
         width: 231px;
         height: 136px;
         top: 200px;
-        left: -30px;
+        left: 0;
     }
 
     .test::after {
