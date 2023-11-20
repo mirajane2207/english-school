@@ -10,6 +10,8 @@
     border-bottom: 2px solid;
     position: relative;
     z-index: 1000;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .advantage__container::before {
@@ -37,6 +39,13 @@
 .advantage__title {
     min-width: 215px;
 }
+
+@media(max-width: 1439px) {
+    .advantage__desc {
+        max-width: unset;
+    }
+}
+
 
 @media(max-width: 1184px) {
     .advantage__title {
