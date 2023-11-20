@@ -24,8 +24,9 @@ const Lessons = () => {
 
   return (
     <div className={classes.lessons___container}>
+
       {
-        windowWidth > 789
+        windowWidth > 820
           ? <SectionTitle>Уроки для всіх</SectionTitle>
           : <div className={classes.section__title_container}>
             <SectionTitle>Уроки для всіх</SectionTitle>
@@ -34,7 +35,7 @@ const Lessons = () => {
       }
       <div className={classes.lessons__list_container}>
         {
-          windowWidth > 789
+          windowWidth > 820
             ? <img src={lessonsImg} alt="" />
             : <span></span>
         }

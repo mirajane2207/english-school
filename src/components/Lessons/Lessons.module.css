@@ -1,4 +1,5 @@
 .lessons___container {
+  box-sizing: border-box;
     height: 300px;
     margin-bottom: 180px;
     margin-right: 0;
@@ -34,33 +35,45 @@
 
 @media(min-width: 1440px) {
     .lessons__list_container {
-        max-width: 60vw;
-        padding-right: 10vw;
+        padding-right: unset;
     }
+
+    .lessons___container {
+        width: auto;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-bottom: 180px;
+    }
+
 }
 
 @media(max-width: 1439px) {
     .lessons___container {
         width: 100vw;
+        padding-left: 40px;
     }
-    
+
+    .lessons__list_container {
+        width: 100%;
+        padding-right: 0;
+        max-width: unset;
+    }
+
 }
 
 
 @media(max-width: 1184px) {
     .lessons___container {
+        padding-left: 30px;
         gap: 54px;
         margin-bottom: 150px;
-    }
-
-    .lessons__list_container {
-        max-width: calc(70vw - 30px);
     }
 }
 
 
 @media(max-width: 820px) {
     .lessons___container {
+  box-sizing: unset;
         width: calc(100vw - 20px);
         padding: 0 10px;
         display: flex;
@@ -84,9 +97,5 @@
 
     .lessons__btn:hover {
         box-shadow: none;
-    }
-
-    .lessons__list_container {
-        max-width: calc(100vw - 20px);
     }
 }
