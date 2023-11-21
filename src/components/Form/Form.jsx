@@ -9,15 +9,15 @@ const Form = (props) => {
 
     useEffect(() => {
         const handleResize = () => {
-          setWindowWidth(window.innerWidth);
+            setWindowWidth(window.innerWidth);
         };
-    
+
         window.addEventListener('resize', handleResize);
-    
+
         return () => {
-          window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleResize);
         };
-      }, []);
+    }, []);
 
     return (
         <div className={classes.form__wrapper}>
@@ -25,7 +25,7 @@ const Form = (props) => {
                 props.mode === 'adult'
                     ? <div className={classes.form__adult_title}>
                         <img src={adultImg} alt="" />
-                        <h1 className={classes.form__title}>Втілюємо <br/>мрії багатьох</h1>
+                        <h1 className={classes.form__title}>Втілюємо <br />мрії багатьох</h1>
                     </div>
                     : <div className={classes.form__children_title}>
                         <img src={cildrenImg} alt="" />
@@ -34,12 +34,12 @@ const Form = (props) => {
             }
             <form action="">
                 {
-                    windowWidth < 789
+                    windowWidth > 789
                         ? <div className={classes.form__container}>
                             <div className={classes.form__input_container}>
-                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
-                                <input type="tel" placeholder='Номер телефону' pattern="[0-9\+]+" minlength="13" maxlength="13"/>
-                                <input type="text" placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"/>
+                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+" />
+                                <input type="tel" placeholder='Номер телефону' pattern="[0-9\+]+" minlength="13" maxlength="13" />
+                                <input type="text" placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" />
                             </div>
                             <div className={classes.form__btn_container}>
                                 <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
@@ -49,8 +49,8 @@ const Form = (props) => {
                         : <div className={classes.form__container}>
                             <p className={classes.form__text}>Заповніть заявку та ми зв'яжемося з вами найближчим часом</p>
                             <div className={classes.form__input_container}>
-                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+"/>
-                                <input type="number" placeholder='Номер телефону' pattern="[0-9\+]+"/>
+                                <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+" />
+                                <input type="number" placeholder='Номер телефону' pattern="[0-9\+]+" />
                                 <input type="text" placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" />
                             </div>
                             <div className={classes.form__btn_container}>

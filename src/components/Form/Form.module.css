@@ -1,6 +1,7 @@
 .form__wrapper {
     width: calc(100vw - 160px);
-    margin-bottom: 120px;
+    margin: 0 auto;
+    margin-bottom: 220px;
     height: 580px;
     display: flex;
     justify-content: center;
@@ -128,8 +129,9 @@ input:focus::placeholder {
 
 @media(max-width: 1439px) {
     .form__wrapper {
-        justify-content: flex-start;
-    
+        width: calc(100vw - 80px);
+        padding: 0 40px;
+        justify-content: center;
     }
 
     .form__container {
@@ -141,7 +143,7 @@ input:focus::placeholder {
 @media(max-width: 1184px) {
     .form__wrapper {
         width: calc(100vw - 60px);
-        margin-bottom: 140px;
+        padding: 0 30px;
         height: 440px;
     }
 
@@ -188,7 +190,9 @@ input:focus::placeholder {
 
     .form__wrapper {
         width: calc(100vw - 20px);
-        margin-bottom: 96px;
+        padding: 0 10px;
+        margin-bottom: 140px;
+        justify-content: center;
     }
 
     .form__input_container {
@@ -238,14 +242,16 @@ input:focus::placeholder {
     }
 
     .form__adult_title img {
+        position: relative;
         width: 77px;
         height: 135px;
         top: -27px;
-        left: 160px;
+        left: 10px;
     }
 
     .form__title {
         font-size: 36px;
+        min-width: 233px;
     }
 
     .form__children_title img {
