@@ -9,9 +9,6 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import ForChildren from './components/ForChildren/ForChildren'
 import ParentsAsk from './components/ParentsAsk/ParentsAsk'
-import ScrollSection from './components/ScrollSection/ScrollSection'
-
-
 
 const App = () => {
   const [mode, setMode] = useState('adult');
@@ -21,7 +18,7 @@ const App = () => {
   }
 
   const scrollTo = (section) => {
-    document.querySelector(section).scrollIntoView({behavior: "smooth" });
+    document.querySelector(section).scrollIntoView({ behavior: "smooth" });
   };
 
 
@@ -34,16 +31,16 @@ const App = () => {
             <About mode={mode} title='Ми молода але вже успішна школа англійської' text='Школа англійської мови Pengli - це команда молодих, креативних викладачів, які постійно розвиваються, вдосконалюються, а також всім серцем люблять англійську мову і знають як зробити так аби ви без жодних страждань та дискомфорту заговорили англійською незгірше Бориса Джонсона. За нашими плечами 5 років досвіду викладання, а також великий багаж цінних знань, якими ми радо ділимось з нашими студентами.' />
             <Lessons />
             <Advantages />
-            <Tariffs/>
-            <Reviews scrollTo={scrollTo}/>
+            <Tariffs />
+            {/* <Reviews scrollTo={scrollTo}/> */}
             <Form mode={mode} />
-            <Footer mode={mode} changeMode={changeMode} scrollTo={scrollTo}/>
+            <Footer mode={mode} changeMode={changeMode} scrollTo={scrollTo} />
           </div>
           : <div className='inner_wrapper'>
             {
               window.screen.availWidth > 820
-            ? <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.' />
-            : <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз!' />
+                ? <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.' />
+                : <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз!' />
 
             }
             <About mode={mode} title='Чим цікава та унікальна школа англійської для дітей Pengli?' text='В онлайн-школі Pengli Ваша дитина зможе не тільки покращити рівень англійської та здобути необхідні навички для успішного навчання у школі, але й по-справжньому полюбити вивчення іноземної мови та з нетерпінням чекати на кожне заняття. Інтерактивні завдання, вікторини, ігри, перегляд та обговорення улюблених мультиків - все це перетворить навчання в цікавий та захопливий процес, а наші досвідчені викладачі максимально наповнять кожне заняття важливим та корисним матеріалом.' />
