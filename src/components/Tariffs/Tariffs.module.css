@@ -89,8 +89,9 @@
 
 @media(min-width: 1440px) {
     .tariffs__container {
-        max-width: 1280px;
+        max-width: 1294px;
         margin: 0 auto;
+        margin-bottom: 180px;
         overflow-x: visible;
     }
 
@@ -102,9 +103,9 @@
         padding-left: 40px;
     }
 
-.tariffs__items_container {
-    width: 100%;
-}
+    .tariffs__items_container {
+        width: 100%;
+    }
 
 }
 
@@ -225,6 +226,10 @@
     }
 
     .tariffs__items_container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .rect {
         display: none;
     }
 }

@@ -1,6 +1,5 @@
 .header__container {
     height: 720px;
-    margin: auto;
     margin-bottom: 110px;
 }
 
@@ -51,7 +50,7 @@
 
 @media(min-width: 1440px) {
     .wrapper {
-        width: 1530px;
+        width: 1410px;
         position: relative;
         margin: 0 auto;
     }
@@ -59,7 +58,6 @@
     .header__container {
         width: 1280px;
         position: relative;
-        margin-left: 80px;
     }
 
     .header__title {

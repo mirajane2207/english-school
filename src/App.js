@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useEffect, useState } from 'react'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Lessons from './components/Lessons/Lessons'
@@ -11,7 +11,7 @@ import ForChildren from './components/ForChildren/ForChildren'
 import ParentsAsk from './components/ParentsAsk/ParentsAsk'
 
 const App = () => {
-  const [mode, setMode] = useState('adult');
+  const [mode, setMode] = useState('children'); 
 
   function changeMode(mode) {
     setMode(mode)
@@ -20,6 +20,21 @@ const App = () => {
   const scrollTo = (section) => {
     document.querySelector(section).scrollIntoView({ behavior: "smooth" });
   };
+
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   return (
@@ -38,7 +53,7 @@ const App = () => {
           </div>
           : <div className='inner_wrapper'>
             {
-              window.screen.availWidth > 820
+              windowWidth > 789
                 ? <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз! Придбайте абонемент нашої онлайн-школи та відкрийте широкий спектр можливостей для Ваших дітлахів.' />
                 : <Header scrollTo={scrollTo} changeMode={changeMode} mode={mode} title='Школа англійської для дітей' text='Подбайте про майбутнє Вашої дитини вже зараз!' />
 

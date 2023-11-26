@@ -62,7 +62,7 @@ footer {
     .footer__content_container {
         width: 100%;
         justify-content: space-between;
-        gap: 10px;
+        gap: 20px;
     }
 
 }
@@ -105,8 +105,13 @@ footer {
         gap: 28px;
     }
 
+    .footer__item_container {
+        width: 100%;
+    }
+
+
     .footer__header {
-        width: 300px;
+        width: 97%;
         margin-bottom: 6px;
     }
 

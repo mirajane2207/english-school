@@ -34,7 +34,7 @@ const Form = (props) => {
             }
             <form action="">
                 {
-                    windowWidth > 789
+                    windowWidth > 820
                         ? <div className={classes.form__container}>
                             <div className={classes.form__input_container}>
                                 <input type="text" placeholder='Ваше ім’я' pattern="[a-zA-ZЁёА-я\s]+" />

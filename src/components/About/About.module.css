@@ -80,6 +80,10 @@
         padding: 0 40px;
     }
 
+    .about__rect {
+        bottom: -44px;
+    }
+
 }
 
 @media (max-width: 1184px) {
@@ -131,7 +135,6 @@
 
     .about__rect {
         height: 117px;
-        bottom: 86px;
     }
 
 }
