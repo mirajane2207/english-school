@@ -18,13 +18,15 @@
 }
 
 .scrolltotopbutt svg:hover circle {
-  fill: #e8e8e8;
+  fill: #e7e7e7;
   cursor: pointer;
   transition: all 0.6s;
 }
 
 .scrolltotopbutt svg circle {
   transition: all 0.6s;
+  fill: #f1f1f1;
+
 }
 
 @media (max-width: 1047px){
