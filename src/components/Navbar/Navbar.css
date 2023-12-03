@@ -165,13 +165,13 @@ select {
         margin-top: 5px;
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 0 10px;
         gap: 24px;
     }
 
     .navbar-mobile ul>li {
-        margin-right: 0;
-        width: 300px;
+        width: calc(100vw - 20px);
+        box-sizing: border-box;
     }
 
     .close-btn {
@@ -193,9 +193,9 @@ select {
         display: block;
         position: absolute;
         top: -280px;
-        right: -50px;
+        right: -10px;
         z-index: -1;
-        width: 50vw;
+        width: 130px;
         height: 328px;
         background-image: linear-gradient(171deg, rgba(222, 31, 31, 0.40) 0%, rgba(103, 31, 222, 0.40) 36.15%, rgba(34, 31, 222, 0.40) 66.33%, rgba(0, 163, 255, 0.40) 100%);
         border-radius: 16px;
@@ -204,14 +204,14 @@ select {
     .navbar-head {
         display: flex;
         justify-content: space-between;
-        width: 300px;
+        width: 100%;
     }
 
     .navbar-item {
         display: block;
         padding-bottom: 16px;
         border-image: var(--strong-gradient) 1;
-        width: 300px;
+        width: 100%;
         border-bottom: 2px solid;
     }
 
@@ -241,6 +241,10 @@ select {
         overflow: hidden;
         max-height: 1000px;
         transition: all 1s cubic-bezier(1, 0, 1, 0);
+    }
+
+    .navbar ul>li:last-child {
+        width: unset;
     }
 
 }
