@@ -79,9 +79,9 @@ footer {
         width: inherit;
     }
 
-.footer__header {
-    width: 100%;
-}
+    .footer__header {
+        width: 100%;
+    }
 
     .footer__item_container {
         width: auto;
@@ -92,7 +92,7 @@ footer {
 @media(max-width: 820px) {
     footer {
         flex-direction: column;
-        width: calc(100vw - 10px);
+        width: calc(100vw - 20px);
         padding: 24px 10px;
         gap: 16px;
     }

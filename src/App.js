@@ -47,7 +47,7 @@ const App = () => {
             <Lessons />
             <Advantages />
             <Tariffs />
-            {/* <Reviews scrollTo={scrollTo}/> */}
+            <Reviews scrollTo={scrollTo}/>
             <Form mode={mode} />
             <Footer mode={mode} changeMode={changeMode} scrollTo={scrollTo} />
           </div>
