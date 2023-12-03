@@ -6,6 +6,7 @@
     height: auto;
     align-items: flex-start;
     gap: 61px;
+    
 }
 
 .reviews__items_container {
@@ -51,6 +52,8 @@
     .reviews__container {
         width: 1280px;
         margin: 0 auto;
+    margin-bottom: 175px;
+
     }
 
 }
