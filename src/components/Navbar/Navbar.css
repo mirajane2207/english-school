@@ -227,7 +227,7 @@ select {
 
     .navbar-mobile {
         max-height: 0px;
-        transition: all 1s cubic-bezier(0, 1, 0, 1);
+        transition: all 0.5s cubic-bezier(0, 1, 0, 1);
         position: fixed;
         top: 0;
         bottom: 0;
@@ -240,7 +240,7 @@ select {
     .navbar-mobile.expanded {
         overflow: hidden;
         max-height: 1000px;
-        transition: all 1s cubic-bezier(1, 0, 1, 0);
+        transition: all 0.5s cubic-bezier(1, 0, 1, 0);
     }
 
     .navbar ul>li:last-child {

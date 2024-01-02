@@ -66,8 +66,8 @@ const Navbar = (props) => {
                                         <li><a href="/#" className='navbar-item' onClick={() => scrollMobile('#tariffs')}>Тарифи</a></li>
                                         {
                                             props.mode === 'adult'
-                                                ? <li><a href="/#" onClick={() => scrollMobile('/#reviews')}>Відгуки</a></li>
-                                                : <li><a href="/#" onClick={() => scrollMobile('/#parentsAsk')}>Батьки питають</a></li>
+                                                ? <li><a href="/#" onClick={() => scrollMobile('#reviews')}>Відгуки</a></li>
+                                                : <li><a href="/#" onClick={() => scrollMobile('#parentsAsk')}>Батьки питають</a></li>
                                         }
                                         <li><button className='navbar-item-btn' onClick={props.contactUs}>Зв'язатися з нами</button></li>
                                     </ul>

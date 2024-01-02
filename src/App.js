@@ -12,7 +12,7 @@ import ParentsAsk from './components/ParentsAsk/ParentsAsk'
 import ScrollToTopButt from './components/ScrollToTopButt/ScrollToTopButt'
 
 const App = () => {
-  const [mode, setMode] = useState('children'); 
+  const [mode, setMode] = useState('adult'); 
 
   function changeMode(mode) {
     setMode(mode)

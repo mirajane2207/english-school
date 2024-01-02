@@ -15,10 +15,10 @@ const ParentsAskItem = (props) => {
 
     return (
         <div className={classes.item__container}>
-                <div className={rootClasses.join(' ')} >
+                <div className={rootClasses.join(' ')} onClick={changeState} >
                     <div className={classes.item__opened_content_container}>
                         <h3>{props.title}</h3>
-                        <button onClick={changeState}></button>
+                        <button></button>
                     </div>
                     {
                         !visible

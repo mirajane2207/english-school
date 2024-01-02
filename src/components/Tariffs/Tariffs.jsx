@@ -18,7 +18,7 @@ const Tariffs = (props) => {
     }
 
     function scrollRight() {
-        if (window.screen.availWidth > 520) {
+        if (window.screen.availWidth > 1184) {
             scroll(320)
             setIsLeftActive(true)
             setIsRightActive(false)
@@ -39,13 +39,14 @@ const Tariffs = (props) => {
                     scroll(270)
                     setIsRightActive(false)
                     break;
+                default: break;
             }
         }
     }
 
     function scrollLeft() {
-        if (window.screen.availWidth > 520) {
-            scroll(-300)
+        if (window.screen.availWidth > 1184) {
+            scroll(-320)
             setIsLeftActive(false)
             setIsRightActive(true)
         } else {
@@ -64,6 +65,7 @@ const Tariffs = (props) => {
                     scroll(-280)
                     setIsRightActive(true)
                     break;
+                default: break;
             }
         }
     }

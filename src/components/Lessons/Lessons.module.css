@@ -80,7 +80,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin: auto 0;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         gap: 16px;
     }
 
@@ -97,5 +97,9 @@
 
     .lessons__btn:hover {
         box-shadow: none;
+    }
+
+    .lessons__list_container::-webkit-scrollbar {
+        display: none;
     }
 }

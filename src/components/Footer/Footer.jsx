@@ -8,7 +8,7 @@ import phone from './phone-ico.svg'
 import msg from './msg-ico.svg'
 import whatsup from './whatsup-ico.svg'
 
-const Footer = ({mode, changeMode, scrollTo}) => {
+const Footer = ({ mode, changeMode, scrollTo }) => {
     function setAdult() {
         changeMode('adult')
     }
@@ -19,21 +19,18 @@ const Footer = ({mode, changeMode, scrollTo}) => {
 
     return (
         <footer>
-            
-                <img src={logo} alt="" className={classes.footer__logo}/>
-
+            <img src={logo} alt="" className={classes.footer__logo} />
             <div className={classes.footer__content_container}>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Меню</h6>
-                    <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#header')}>Головна</a>
-                    <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#about')}>Про школу</a>
-                    <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#tariffs')}>Тарифи</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#header')}>Головна</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#about')}>Про школу</a>
+                    <a className={classes.footer__nav} onClick={() => scrollTo('#tariffs')}>Тарифи</a>
                     {
                         mode === 'adult'
-                        ?  <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#reviews')}>Відгуки</a>
-                        :  <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#parentsAsk')}>Батьки питають</a>
+                            ? <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#reviews')}>Відгуки</a>
+                            : <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#parentsAsk')}>Батьки питають</a>
                     }
-                   
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Навігація</h6>
@@ -42,14 +39,14 @@ const Footer = ({mode, changeMode, scrollTo}) => {
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Стежити</h6>
-                        <a href="/https://www.facebook.com/profile.php?id=100009215430214"><img src={facebook} alt="" />Facebook</a>
-                        <a href="/https://instagram.com/enjoyenglish__?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src={instagram} alt="" />Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=100009215430214"><img src={facebook} alt="" />Facebook</a>
+                    <a href="https://instagram.com/enjoyenglish__?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src={instagram} alt="" />Instagram</a>
                 </div>
                 <div className={classes.footer__item_container}>
                     <h6 className={classes.footer__header}>Контакти</h6>
                     <a href="mailto:juliabodnar7@ukr.net"><img src={msg} alt="" />juliabodnar7@ukr.net</a>
                     <a href="tel:+380971601437"><img src={phone} alt="" />+38 097 160 14 37</a>
-                    <a href="https://t.me/PengliSchoolBot"><img src={telegram} alt="" />@Juliia_bodnar</a>
+                    <a href="https://t.me/PengliSchoolBot"><img src={telegram} alt="" />@PengliSchoolBot</a>
                     <a href="/#"><img src={whatsup} alt="" />+38 097 160 14 37</a>
                 </div>
             </div>

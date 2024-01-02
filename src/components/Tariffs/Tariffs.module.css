@@ -22,6 +22,7 @@
 
 .tariffs__items_container {
     padding-top: 5px;
+    padding-bottom: 5px;
     width: 72vw;
     display: flex;
     align-items: flex-start;
@@ -222,7 +223,7 @@
 
     .tariffs__items_container {
         width: calc(100vw - 20px);
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
 
     .tariffs__items_container::-webkit-scrollbar {
