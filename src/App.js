@@ -10,10 +10,9 @@ import Footer from './components/Footer/Footer'
 import ForChildren from './components/ForChildren/ForChildren'
 import ParentsAsk from './components/ParentsAsk/ParentsAsk'
 import ScrollToTopButt from './components/ScrollToTopButt/ScrollToTopButt'
-import Reviewnew from './components/Reviewnew/Reviewnew'
 
 const App = () => {
-  const [mode, setMode] = useState('adult'); 
+  const [mode, setMode] = useState('adult');
 
   function changeMode(mode) {
     setMode(mode)
@@ -49,11 +48,10 @@ const App = () => {
             <Lessons />
             <Advantages />
             <Tariffs />
-            {/* <Reviews scrollTo={scrollTo}/> */}
-            <Reviewnew scrollTo={scrollTo}/>
+            <Reviews scrollTo={scrollTo} />
             <Form mode={mode} />
             <Footer mode={mode} changeMode={changeMode} scrollTo={scrollTo} />
-            <ScrollToTopButt/>
+            <ScrollToTopButt />
           </div>
           : <div className='inner_wrapper'>
             {
@@ -68,10 +66,9 @@ const App = () => {
             <ParentsAsk />
             <Form mode={mode} />
             <Footer scrollTo={scrollTo} mode={mode} changeMode={changeMode} />
-            <ScrollToTopButt/>
+            <ScrollToTopButt />
           </div>
       }
-
     </div>
   )
 }

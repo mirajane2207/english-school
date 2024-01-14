@@ -140,6 +140,9 @@
     border-image: none;
 }
 
+.modal__close_btn:hover {
+    cursor: pointer;
+}
 
 @media(max-width: 820px) {
     .modal__content {

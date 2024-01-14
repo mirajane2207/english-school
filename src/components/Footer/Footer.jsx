@@ -28,8 +28,8 @@ const Footer = ({ mode, changeMode, scrollTo }) => {
                     <a className={classes.footer__nav} onClick={() => scrollTo('#tariffs')}>Тарифи</a>
                     {
                         mode === 'adult'
-                            ? <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#reviews')}>Відгуки</a>
-                            : <a href="/#" className={classes.footer__nav} onClick={() => scrollTo('#parentsAsk')}>Батьки питають</a>
+                            ? <a className={classes.footer__nav} onClick={() => scrollTo('#reviews')}>Відгуки</a>
+                            : <a className={classes.footer__nav} onClick={() => scrollTo('#parentsAsk')}>Батьки питають</a>
                     }
                 </div>
                 <div className={classes.footer__item_container}>
