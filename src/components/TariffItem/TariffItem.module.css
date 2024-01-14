@@ -65,13 +65,13 @@
         box-shadow: none;
     }
 
-    .tariff__title h3{
+    .tariff__title h3 {
         font-size: 24px;
     }
 
-.tariff_btn {
-padding: 12px 77.5px;
-}
+    .tariff_btn {
+        padding: 12px 77.5px;
+    }
 }
 
 
@@ -97,7 +97,7 @@ padding: 12px 77.5px;
         font-size: 12px;
     }
 
-    .tariff__container button {
+    .tariff_btn {
         padding-left: 69px;
         padding-right: 69px;
     }
