@@ -25,7 +25,7 @@ const Reviews = ({ scrollTo }) => {
         <div className={classes.reviews__container} id='reviews'>
             <div>
                 <SectionTitle>Відгуки про нас</SectionTitle>
-                <img src={personImg} alt="" className={classes.reviews__img} />
+                {/* <img src={personImg} alt="" className={classes.reviews__img} /> */}
             </div>
             <div className={classes.reviews__content_container}>
                 <div className={rootClasses.join(' ')}>

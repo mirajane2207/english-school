@@ -58,12 +58,6 @@
 }
 
 @media(max-width: 820px) {
-
-    .review__container {
-        width: calc(100vw - 84px);
-    }
-
-
     .review__container p {
         font-size: 16px;
     }

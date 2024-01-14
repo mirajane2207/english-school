@@ -12,8 +12,7 @@
 }
 
 .scrolltotopbutt svg{
-  border: 2px #3f3f3f solid;
-  border-radius: 50px;
+  filter: drop-shadow(-1px -3px 10px #bebebe);
   transition: all 0.6s;
 }
 
