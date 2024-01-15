@@ -57,6 +57,7 @@ select {
     color: #020202;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .header__mode_active {
@@ -70,6 +71,7 @@ select {
     border-image: var(--strong-gradient) 1;
     width: max-content;
     border-bottom: 2px solid;
+    cursor: pointer;
 }
 
 .contact-us-btn {

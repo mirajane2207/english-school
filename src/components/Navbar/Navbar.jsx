@@ -36,8 +36,8 @@ const Navbar = (props) => {
         <nav className='menu'>
             <div className='left'>
                 <a href="/"><img src={logo} alt="Logo" className='logo' /></a>
-                <a href="/" className={props.mode === 'adult' ? 'header__mode_active' : 'header__mode'} onClick={setAdult}>Для дорослих</a>
-                <a href="/#" className={props.mode === 'children' ? 'header__mode_active' : 'header__mode'} onClick={setChildren}>Для дітей</a>
+                <p className={props.mode === 'adult' ? 'header__mode_active' : 'header__mode'} onClick={setAdult}>Для дорослих</p>
+                <p className={props.mode === 'children' ? 'header__mode_active' : 'header__mode'} onClick={setChildren}>Для дітей</p>
             </div>
             <div className='navbar'>
                 {windowWidth > 820
